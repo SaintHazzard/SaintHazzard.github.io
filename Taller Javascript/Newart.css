@@ -1,0 +1,147 @@
+:root {
+  --color-primario: #ff5733;
+}
+
+html {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/513/562/non_2x/gradient-blue-background-free-vector.jpg);
+  background-size: contain;
+}
+
+body {
+  width: 1024px;
+  margin: auto;
+  background-color: #ff5733;
+  border-radius: 40px;
+  box-shadow: inset 0 0 0 7px #08b;
+  position: relative;
+  min-height: 800px;
+  max-height: 950px;
+}
+
+header {
+  width: 1000px;
+  margin: auto;
+  height: 300px;
+  position: relative;
+}
+
+#mifoto {
+  height: 250px;
+  margin: auto;
+  display: block;
+  top: 10px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+}
+
+#nombre h1 {
+  text-align: center;
+}
+
+nav,
+main {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  position: relative;
+}
+
+li a {
+  padding: 2px 7px 2px 7px;
+  color: #666;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  font-size: large;
+}
+
+#navega li a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+#navega li a:active {
+  background-color: #08b;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-family: sans-serif;
+}
+.panel {
+  text-align: justify;
+  font-size: 1.4em;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.5s ease-out;
+  border: #08b solid 1px;
+  position: relative;
+  top: -24px;
+  background-color: rgb(0, 136, 187, 0.4);
+}
+.panel-none {
+  text-align: justify;
+  font-size: 0.8em;
+  font-family: "Times New Roman", Times, serif;
+  display: none;
+  transition: all 1s;
+}
+
+option {
+  text-align: center;
+}
+
+.colornaranja {
+  background: #ff5733;
+}
+
+.colorverde {
+  background: green;
+}
+
+.colorpurpura {
+  background: purple;
+}
+
+.fondoverde {
+  background-image: url(https://fondosmil.com/fondo/73111.jpg);
+}
+
+.fondonegro {
+  background-image: url(https://us.123rf.com/450wm/scenery1/scenery11907/scenery1190700246/126681806-superficie-de-acero-usable-o-fondo-de-metal-negro.jpg?ver=6);
+}
+.corto {
+  position: relative;
+  margin: auto;
+  width: 800px;
+}
+
+.largo {
+  position: relative;
+  margin: auto;
+  width: 900px;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  inline-size: auto;
+  border: 3px solid #08b;
+}
+#contenido1 p {
+  font-size: 1.8em;
+  text-align: justify;
+}
+
+.acordeon {
+  margin-bottom: 0px;
+}
+
+.info_content__punto h3 {
+  font-size: 5em;
+}

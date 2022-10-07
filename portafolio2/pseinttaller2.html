@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseint Taller 2</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >Repositorio GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="cuadrovideo">
+        <iframe
+          class="video"
+          width="950 "
+          height="650"
+          src="https://www.youtube.com/embed/pzO_eD4f_dI"
+          title="taller2 cantera1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- primer cuadro -->
+            <b>
+              1. Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es mayor o igual a 18 años, deberá mostrar
+              en pantalla: Usted es mayor de edad.
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+            
+  Proceso taller "2.1"
+	Definir edad Como Entero;
+	Escribir "Hola usuario, indicanos tu edad";
+	Leer edad;
+	si edad >= 18
+		Entonces
+		Escribir "Eres mayor de edad";
+		
+	Sino 
+		escribir "Usted aún es un niño(a).";
+	FinSi
+	
+FinProceso
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- segundo cuadro -->
+            <b>
+              2. Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es menor a 18 años, deberá mostrar en
+              pantalla: Usted aún es un niño(a).
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso taller "2.2"
+	Definir edad Como Entero;
+	Escribir "Hola usuario, indicanos tu edad";
+	Leer edad;
+	si edad >= 18
+		Entonces
+		Escribir "Eres mayor de edad";
+		
+	Sino 
+		escribir "Usted aún es un niño(a).";
+	FinSi
+	
+FinProceso
+          </code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >3. Realizar un programa en el cual se solicite el nombre,
+              apellidos y edad de la persona. Si la persona es mayor o igual a
+              18 años, entonce se deberá imprimir en pantalla [Nombre completo]
+              usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si
+              la edad de la persona es menor que 18 años, entonces, deberá
+              imprimirse el siguiente mensaje: [Nombre completo] usted es menor
+              de edad, por lo tanto, no puede entrar a la fiesta, por favor
+              devuélvase a su casa.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+  Proceso taller
+	Definir nombre, apellidos Como Caracter;
+	Definir edad Como entero;
+	Escribir "Hola, indicame tu nombre completo";
+	Leer nombre;
+	Escribir "Ahora indicame tu edad";
+	
+	Leer edad;
+	
+	si edad >= 18
+		Entonces
+		Escribir nombre, " usted es mayor de edad, por lo tanto puede entrar a la fiesta.";
+	SiNo
+		
+		Escribir nombre, " usted es menor de edad, por lo tanto, no puede 
+    entrar a la fiesta, por favor devuélvase a su casa";
+	FinSi
+	
+	
+	
+FinProceso
+
+
+        </code></pre>
+        </div>
+        <div class="info_content">
+          <!-- PUNTO 4 -->
+          <p class="pcontenido">
+            <b
+              >4. La video tienda que presta sus servicios de alquiler de
+              películas a los usuarios del barrio el Porvenir, requiere de una
+              aplicación que permita registrar el alquiler de las películas que
+              adquieren sus usuarios. Para cada usuario se debe permitir la
+              opción de alquilar película, consultar películas disponibles y
+              recibir película en la video tienda con la opción de realizar
+              anotaciones sobre estas si se llegan a presentar daños u otra
+              novedad sobre la película.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+  Proceso sin_titulo
+	Definir nombrecliente, anotacion, pelicula1, pelicula2, pelicula3 Como Caracter;
+	Definir eleccion Como Entero;
+	Escribir "Hola, Indicanos tu nombre por favor";
+	Leer nombrecliente;
+	pelicula1<- "Jumanji";
+	pelicula2<-"Coco";
+	pelicula3<-"Encanto";
+	Escribir "Hola ", nombrecliente, " somos la videotienda el porvenir en que
+   te podemos ayudar hoy ";
+	
+	Escribir "1.Consultar peliculas disponibles";
+	Escribir "2.Alquilar pelicula";
+	Escribir "3.Devolver pelicula";
+	Leer  eleccion;
+	
+	
+	Segun eleccion Hacer
+		1:	Escribir "Actualmente tenemos las siguientes peliculas disponibles
+     escribe el numero de la que deseas alquilar";
+			escribir "1. ", pelicula1;
+			Escribir "2. ", pelicula2;
+			Escribir "3. ", pelicula3;
+			Escribir "4. No deseo alquilar ninguna";
+			Leer eleccion;
+			segun eleccion Hacer
+				1: Escribir "Alquilaste la pelicula ", pelicula1;
+				2: Escribir "Alquilaste la pelicula ", pelicula2;
+				3: Escribir "Alquilaste la pelicula ", pelicula3;
+				4: si eleccion=4 Entonces
+						Escribir "Vuelve pronto";
+					FinSi
+			FinSegun
+			
+		2: Escribir "1. ", pelicula1;
+			Escribir "2. ", pelicula2;
+			Escribir "3. ", pelicula3;
+			leer eleccion;
+			segun eleccion Hacer
+				1: Escribir "1. ", pelicula1;
+				2:	Escribir "2. ", pelicula2;
+				3:	Escribir "3. ", pelicula3;
+			FinSegun
+		3: Escribir "Deseas añadir alguna observacion sobre la pelicula";
+			Escribir "1. Si";
+			Escribir "2. No";
+			leer eleccion;
+				segun eleccion hacer
+				1: Escribir "Escribe tu observacion";
+					leer anotacion;
+					Escribir "Gracuas por utilizar nuestros servicios, su observacion fue recibida
+           y sera tenida en cuenta para
+          mejorar nuestros servicios, hasta pronto";
+				2: Escribir "Gracuas por utilizar nuestros servicios, hasta pronto";
+			FinSegun
+			
+			
+	FinSegun
+	
+	
+	
+FinProceso
+          
+            
+
+
+        </code></pre>
+        </div>
+      </main>
+      <!-- PUNTO 5 -->
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >5. La Droguería Mi Salud presta sus servicios en la localidad de
+              Suba y requiere una aplicación para poder facturar los productos
+              que vende a sus clientes y para ello, los productos tienen unas
+              características que deben indicársele al cliente para que pueda
+              escoger el producto a comprar. Para cada cliente, se tienen las
+              opciones de compra de producto, consulta de precios por producto y
+              devoluciones en caso de que se presenten.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+Proceso Drogueriamia
+	Definir nombrecliente, anotacion Como Caracter;
+	Definir eleccion, carrito Como Entero;
+	Definir producto1, producto2, producto3, producto4 Como Caracter;
+	producto1<- "Acetaminofen 500 mg x 10 capsulas, 1000 COP";
+	producto2<- "Naproflash Capsulas Caja X 4 Capsulas, 5000 COP";
+	producto3<- "Lumbal Caja X 12 Tabletas, 12000 COP";
+	producto4<- "Sevedol Extra Fuerte Caja X 8 Tabletas, 8000 COP";
+	carrito<-0;
+	Escribir "Hola, Indicanos tu nombre por favor";
+	Leer nombrecliente;
+	
+	Escribir "Hola ", nombrecliente, " somos la drogueria mi salud en que te podemos ayudar hoy ";
+	
+	Escribir "1. Comprar";
+	Escribir "2. Consulta los precios de todos nuestros productos";
+	Escribir "3. Devoluciones";
+	leer eleccion;
+	Segun eleccion Hacer
+		1: repetir 
+				Escribir "Que deseas comprar?";
+				Escribir "1. ", producto1;
+				Escribir "2. ", producto2;
+				Escribir "3. ", producto3;
+				Escribir "4. ", producto4;
+				
+				Escribir "5. Pagar";
+				Escribir "Su pedido es de ", carrito, " COP";
+				leer eleccion;
+				segun eleccion Hacer
+					1: carrito<-carrito+1000;
+						Limpiar Pantalla;
+						
+					2: carrito<-carrito+5000;
+						Limpiar Pantalla;
+						
+					3: carrito<-carrito+12000;
+						Limpiar Pantalla;
+						
+					4: carrito<-carrito+8000;
+						Limpiar Pantalla;
+						
+					5: Escribir "El total de su pedido es ", carrito, "COP";
+						
+				FinSegun
+			Hasta Que eleccion =5
+		2:Escribir "Que deseas comprar?";
+			Escribir "1. ", producto1;
+			Escribir "2. ", producto2;
+			Escribir "3. ", producto3;
+			Escribir "4. ", producto4;
+		3:
+			Repetir
+				Escribir "Que producto desea devolver";
+				Escribir "1. ", producto1;
+				Escribir "2. ", producto2;
+				Escribir "3. ", producto3;
+				Escribir "4. ", producto4;
+				Escribir "5. No deseo devolver ningun otro producto";
+				Escribir "Su devolucion es de ", carrito, "COP";
+				leer eleccion;
+				
+				segun eleccion Hacer
+					1: carrito<-carrito+1000;
+						Limpiar Pantalla;
+						
+					2: carrito<-carrito+5000;
+						Limpiar Pantalla;
+						
+					3: carrito<-carrito+12000;
+						Limpiar Pantalla;
+						
+					4: carrito<-carrito+8000;
+						Limpiar Pantalla;
+						
+					5: Escribir "El total de su devolucion es ", carrito, "COP,";
+					FinSegun
+			Hasta Que eleccion=5
+			
+			
+	FinSegun 
+	
+FinProceso
+
+        </code></pre>
+        </div>
+        <!-- meter el otro div derecho -->
+      </main>
+      <!-- PUNTO 6 -->
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >6. El taller de motos "El Maquinista" recibe motocicletas de alto
+              cilindraje para realizar las respectivas revisiones y requiere una
+              aplicación que le permita registrar los servicios generados a sus
+              clientes. Para cada motocicleta se debe tener registro del ingreso
+              al taller y las observaciones por parte del cliente. También debe
+              existir registro de del taller con las novedades y otra de
+              arreglos hechos por el mecánico en caso de que se requiera
+              inventariar cambios repuestos en la motocicleta al entregarla.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+Proceso Drogueriamia
+	Definir nombrecliente, anotacion Como Caracter;
+	Definir eleccion, carrito Como Entero;
+	Definir producto1, producto2, producto3, producto4 Como Caracter;
+	producto1<- "Acetaminofen 500 mg x 10 capsulas, 1000 COP";
+	producto2<- "Naproflash Capsulas Caja X 4 Capsulas, 5000 COP";
+	producto3<- "Lumbal Caja X 12 Tabletas, 12000 COP";
+	producto4<- "Sevedol Extra Fuerte Caja X 8 Tabletas, 8000 COP";
+	carrito<-0;
+	Escribir "Hola, Indicanos tu nombre por favor";
+	Leer nombrecliente;
+	
+	Escribir "Hola ", nombrecliente, " somos la drogueria mi salud en que te podemos ayudar hoy ";
+	
+	Escribir "1. Comprar";
+	Escribir "2. Consulta los precios de todos nuestros productos";
+	Escribir "3. Devoluciones";
+	leer eleccion;
+	Segun eleccion Hacer
+		1: repetir 
+				Escribir "Que deseas comprar?";
+				Escribir "1. ", producto1;
+				Escribir "2. ", producto2;
+				Escribir "3. ", producto3;
+				Escribir "4. ", producto4;
+				
+				Escribir "5. Pagar";
+				Escribir "Su pedido es de ", carrito, " COP";
+				leer eleccion;
+				segun eleccion Hacer
+					1: carrito<-carrito+1000;
+						Limpiar Pantalla;
+						
+					2: carrito<-carrito+5000;
+						Limpiar Pantalla;
+						
+					3: carrito<-carrito+12000;
+						Limpiar Pantalla;
+						
+					4: carrito<-carrito+8000;
+						Limpiar Pantalla;
+						
+					5: Escribir "El total de su pedido es ", carrito, "COP";
+						
+				FinSegun
+			Hasta Que eleccion =5
+		2:Escribir "Que deseas comprar?";
+			Escribir "1. ", producto1;
+			Escribir "2. ", producto2;
+			Escribir "3. ", producto3;
+			Escribir "4. ", producto4;
+		3:
+			Repetir
+				Escribir "Que producto desea devolver";
+				Escribir "1. ", producto1;
+				Escribir "2. ", producto2;
+				Escribir "3. ", producto3;
+				Escribir "4. ", producto4;
+				Escribir "5. No deseo devolver ningun otro producto";
+				Escribir "Su devolucion es de ", carrito, "COP";
+				leer eleccion;
+				
+				segun eleccion Hacer
+					1: carrito<-carrito+1000;
+						Limpiar Pantalla;
+						
+					2: carrito<-carrito+5000;
+						Limpiar Pantalla;
+						
+					3: carrito<-carrito+12000;
+						Limpiar Pantalla;
+						
+					4: carrito<-carrito+8000;
+						Limpiar Pantalla;
+						
+					5: Escribir "El total de su devolucion es ", carrito, "COP,";
+					FinSegun
+			Hasta Que eleccion=5
+			
+			
+	FinSegun 
+	
+FinProceso
+
+        </code></pre>
+        </div>
+        <!-- meter el otro div derecho -->
+      </main>
+      <!-- PUNTO 7 -->
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >7. La Secretaría de Salud Municipal requiere de una aplicación
+              que le permita calcular el IMC (Índice de masa corporal) y
+              requiere los datos peso en kilogramos y estatura en metros Para
+              cada persona encuestada adicional a los datos suministrados, debe
+              mostrar el resultado para cada uno y establecer en qué rango se
+              encuentra (bajo peso, normal, sobrepeso y obeso).
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+Proceso sin_titulo
+	Definir  Peso, estatura, imc como real;
+	imc<-0;
+	Escribir "Calculadora de IMC";
+	Escribir "Indique peso en kilogramos";
+	Leer Peso;
+	Escribir "Indique estatura en metros";
+	leer estatura;
+	Si estatura > 2.10 y estatura < 0.10 Entonces
+		Escribir "Valor de medida incorrecto, indique estatura en metros usando la coma";
+	SiNo
+		imc<-Peso/(estatura^2);
+		Si imc <-18.5 Entonces
+			Escribir imc, ": El IMC es BAJO DE PESO";
+		FinSi
+		Si imc >= 18.5 y imc <= 24.9 Entonces
+			Escribir imc, ": IMC NORMAL";
+		FinSi
+		Si imc >= 25 y imc <= 29.9 Entonces
+			Escribir imc,  ": IMS SOBREPESO";
+			
+		FinSi
+		Si imc >= 30 Entonces
+			
+			Escribir imc, ": IMC OBESIDAD"; 
+		FinSi
+	FinSi
+	
+	
+	
+FinProceso
+
+        </code></pre>
+        </div>
+        <!-- meter el otro div derecho -->
+      </main>
+      <!-- PUNTO 8 -->
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >8. El pastelero Don Carlos es el mejor pastelero de la ciudad y
+              requiere una aplicación que le permita registrar los pedidos de
+              los clientes en cuanto a las tortas que realiza. Cada torta tiene
+              unas características propias como sabor, cantidad (porciones) y
+              decoraciones). Se requiere que la aplicación permita registrar los
+              pedidos, las tortas disponibles y las ventas que se registren
+              diariamente..
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+Proceso sin_titulo
+	definir sabor1, sabor2, sabor3, decoracion1, decoracion2, decoracion3, tamano1, tamano2, tamano3, nombre Como Caracter;
+	Definir eleccion, precio Como Real;
+	sabor1<-"Mora";
+	sabor2<-"Tres leches";
+	sabor3<-"Chocolate";
+	decoracion1<-"Flores";
+	decoracion2<-"Dibujo 3D";
+	decoracion3<-"Dibujo estandar 2D";
+	tamano2<-"Mediana (12 porciones)";
+	tamano1<-"Pequena (6 porciones)";
+	tamano3<-"Grande( 18 porciones)";
+	
+	Escribir "Pasteleria Don carlos";
+	Escribir "1. Registrar pedido";
+	Escribir "2. Tortas disponibles";
+	Escribir "3. Registrar Venta";
+	leer eleccion;
+	Si eleccion = 1 Entonces
+		Escribir "Seleccione sabor para la torta";
+		Escribir "1. ", sabor1;
+		Escribir "2. ", sabor2;
+		Escribir "3. ", sabor3;
+		leer eleccion;
+		Si eleccion = 1 o eleccion=2 o eleccion=3 Entonces
+			Escribir "Seleccione tamaño(porciones) de la torta";
+			Escribir "1. ", tamano1;
+			Escribir "2. ", tamano2;
+			Escribir "3. ", tamano3;
+			leer eleccion;
+			Si eleccion = 1 o eleccion=2 o eleccion=3 Entonces
+				Escribir "Seleccione decoracion de la torta";
+				Escribir "1. ", decoracion1;
+				Escribir "2. ", decoracion2;
+				Escribir "3. ", decoracion3;
+				leer eleccion;
+			finsi	
+			
+			
+			
+		FinSi
+	FinSi
+	Si eleccion = 2 Entonces
+		Escribir "Tortas disponibles";
+		Escribir "1. Mora, mediana, dibujo 3D";
+		Escribir "2. Tres leches, mediana, dibujo 3D";
+		Escribir "3. Chocolate, dibujo estandar 2D ";
+	FinSi
+	Si eleccion = 3 Entonces
+		Escribir "Nombre del cliente";
+		leer nombre;
+		Escribir "Valor de venta de la torta";
+		Leer precio;
+		Escribir "Transaccion exitosa";
+		
+	FinSi
+FinProceso
+
+        </code></pre>
+        </div>
+        <!-- meter el otro div derecho -->
+      </main>
+      <!-- PUNTO 9 -->
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >9. El profesor de geometría está explicando a sus estudiantes las
+              fórmulas para calcular el área de diferentes figuras geométricas,
+              para ello requiere una aplicación que le facilite el ejercicio
+              solicitándole los valores al estudiante. La aplicación debe
+              permitir que el estudiante seleccione si desea calcular el área de
+              un rectángulo, triángulo o trapecio. No olvide solicitar los datos
+              necesarios para realizar cada cálculo y mostrar su respectivo
+              resultado.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+Proceso geometria
+	
+	definir eleccion Como Entero;
+	definir valor1, valor2, valor3, total Como Real;
+	
+	Escribir "Calcula el area de rentangulos, triangulos y trapecios de forma rapida y precisa, selecciona la figura que deseas calcular";
+	Escribir "1. Calcular area de rectangulo";
+	Escribir "2. Calcular area de triangulo";
+	Escribir "3. Calcular area de trapecio";
+	Leer eleccion;
+	Segun eleccion hacer
+		1: escribir "Indica la base de tu rectangulo";
+			leer valor1;
+			Escribir "Indica la altura de tu rectangulo';
+			leer valor2;
+			total<-valor1*valor2;
+			Escribir "El area de tu rectangulo es: ", total;
+			
+			//---------------------------------------------------------//
+			
+		2: escribir "Indica la base de tu triangulo";
+			leer valor1;
+			Escribir "Indica la altura de tu triangulo';
+			leer valor2;
+			total<-(valor1*valor2)/2;
+			Escribir "El area de tu triangulo es: ", total;
+			
+			
+			
+		3:escribir "Indica la medida de una de sus bases";
+			leer valor1;
+			Escribir "Indica la medida de su otra base";
+			leer valor2;
+			Escribir "Y por ultimo indica la altura de tu trapecio";
+			leer valor3;
+			total<-((valor1+valor2)*valor3)/2;
+			Escribir "El area de tu trapecio es: ", total;
+	FinSegun
+	
+FinProceso
+        </code></pre>
+        </div>
+        <!-- meter el otro div derecho -->
+      </main>
+      <!-- PUNTO 10 -->
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >10. El banco "Su banco fiel" es un banco que inicia sus
+              actividades financieras y necesita una aplicación para llevar las
+              cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta
+              tenga los atributos titular y cantidad. Para cada cliente las
+              cuentas permitirán realizar ingresos, retiros o consultas de
+              valor. En los ingresos no se pueden insertar valores negativos y
+              para los retiros el valor no puede ser mayor al valor que tiene en
+              la cuenta.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+Proceso sin_titulo
+	definir ntitular Como Caracter;
+	Definir balance, num, valor1, ingreso, retiro Como Real;
+	Definir eleccion Como Entero;
+	
+	Escribir "Ingrese nombre del titular de la cuenta";
+	leer ntitular;
+	balance<-azar(100);
+	valor1<-0;
+
+	
+	Escribir "Su balance es de: ", balance;
+	Escribir "1. Ingresar";
+	Escribir "2. Retirar";
+	leer eleccion;
+	Segun eleccion Hacer
+		1: Escribir "Que valor desea ingresar?";
+			leer valor1;
+			si valor1>0 Entonces
+				ingreso<-balance+valor1;
+				Escribir "Su ingreso fue por ", valor1, " y su balance ahora es de ", ingreso;
+			SiNo
+				Repetir
+					Escribir "Valor incorrecto o no permitido, ingrese un valor valido";
+					leer valor1;
+				Hasta Que valor1>0
+				ingreso<-balance+valor1;
+				Escribir "Su ingreso fue por ", valor1, " y su balance ahora es de ", ingreso;
+			FinSi
+		2: Escribir "Que valor desea retirar?";
+					leer valor1;
+					si valor1>balance Entonces
+						Repetir
+							Escribir "Saldo insuficiente, ingrese de nuevo el valor";
+							leer valor1;
+						Hasta Que valor1<balance
+						retiro<-balance-valor1;
+						Escribir "Su retiro fue por ", valor1, " y su balance restante es de ", retiro;
+					SiNo
+						retiro<-balance-valor1;
+						Escribir "Su retiro fue por ", valor1, " y su balance restante es de ", retiro;
+						
+					FinSi
+			
+			
+	FinSegun
+	
+	
+	
+	
+	
+FinProceso
+
+        </code></pre>
+        </div>
+        <!-- meter el otro div derecho -->
+      </main>
+
+      <div class="iconflecha">
+        <a href="pseinttaller1.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a href="pseinttaller3.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>

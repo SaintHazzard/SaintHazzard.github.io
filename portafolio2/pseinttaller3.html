@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseint Taller 3</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >Repositorio GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="cuadrovideo">
+        <iframe width="950" height="650" src="https://www.youtube.com/embed/DYJizo7MUZM" title="taller3 cantera1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- primer cuadro -->
+            <b>
+              1. Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es mayor o igual a 18 años, deberá mostrar
+              en pantalla: Usted es mayor de edad.
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+            
+  Proceso sin_titulo
+	Definir i, caract, caract2, asterisco Como Entero;
+	Para i<-1 Hasta 10 Hacer
+		Para asterisco<-1 Hasta 0+i Hacer
+			Escribir Sin Saltar "*";
+			
+		FinPara
+		
+		Escribir "";
+	FinPara
+
+FinProceso
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- segundo cuadro -->
+            <b>
+              2. Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es menor a 18 años, deberá mostrar en
+              pantalla: Usted aún es un niño(a).
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso sin_titulo
+	definir i, asterisco, caract Como Entero;
+	i<--1;
+	asterisco<-1;
+	caract<-1;
+	Mientras i<=8 Hacer
+		i<-i+1;
+		
+		Mientras asterisco<=8-i Hacer
+			asterisco<-asterisco+1;
+			Escribir Sin Saltar " ";
+		FinMientras
+		asterisco<-0;
+		Mientras caract<=0+i Hacer
+			caract<-caract+1;
+			Escribir Sin Saltar "*";
+		FinMientras
+		caract<-0;
+		
+		Escribir "";
+		
+		
+	FinMientras
+FinProceso
+
+          </code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >3. Realizar un programa en el cual se solicite el nombre,
+              apellidos y edad de la persona. Si la persona es mayor o igual a
+              18 años, entonce se deberá imprimir en pantalla [Nombre completo]
+              usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si
+              la edad de la persona es menor que 18 años, entonces, deberá
+              imprimirse el siguiente mensaje: [Nombre completo] usted es menor
+              de edad, por lo tanto, no puede entrar a la fiesta, por favor
+              devuélvase a su casa.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+  Proceso sin_titulo
+	
+	Definir espacio, contador, contadorgeneral, aste, contadoraste, count, i, contadoras Como Real;
+	contador<-0;
+	espacio<-11;
+	contadorgeneral<-0;
+	contadoraste<-10;
+	contadoras<-10;
+	Repetir
+		Repetir
+			contador<-contador+1;
+			Escribir Sin Saltar " ";
+			
+			
+		Hasta Que contador>=espacio;
+		
+		contador<-0;
+		
+		contadoras<-contadoras-1;
+		Repetir
+			Escribir Sin Saltar "*";
+			contador<-contador+1;
+			
+		Hasta Que contador>=10-contadoras
+		
+		contadoras<-contadoras-1;
+		Escribir "";
+		
+
+		
+		
+		
+		contador<-0;
+		espacio<-espacio-1;
+		contadorgeneral<-contadorgeneral+1;
+	
+		
+		
+		
+		
+	Hasta Que contadorgeneral=11
+	Repetir
+		contador<-contador+1;
+		Escribir Sin Saltar " ";
+		
+		
+	Hasta Que contador>=1 y contador>=10;
+	Escribir "*** ";
+	contador<-0;
+	Repetir
+		contador<-contador+1;
+		Escribir Sin Saltar " ";
+		
+		
+	Hasta Que contador>=1 y contador>=10;
+	Escribir "*** ";
+	contador<-0;
+	Repetir
+		contador<-contador+1;
+		Escribir Sin Saltar " ";
+		
+		
+	Hasta Que contador>=1 y contador>=9;
+	
+	Escribir "*****";
+	contador<-0;
+	Repetir
+		contador<-contador+1;
+		Escribir Sin Saltar " ";
+		
+		
+	Hasta Que contador>=1 y contador>=8;
+	Escribir "*******";
+FinProceso
+
+
+
+        </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              voluptate pariatur est. Qui sapiente aut, fugiat illo hic
+              molestiae, adipisci minima perferendis cumque dolor animi sit
+              doloremque alias quod vero!
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+  Proceso sin_titulo
+	definir inusu, contador, i, result Como Real;
+	Escribir "De que valor desea la tabla de multiplicar";
+	Leer inusu;
+	contador<-0;
+	Para i<-1 hasta 10 Hacer
+		result<-inusu*i;
+		Escribir inusu, "*", i, " = ", result;
+	FinPara
+	
+	
+FinProceso
+        </code></pre>
+        </div>
+      </main>
+
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- primer cuadro -->
+            <b>
+              5. Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es mayor o igual a 18 años, deberá mostrar
+              en pantalla: Usted es mayor de edad.
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+            
+  Proceso sin_titulo
+	Definir eleccions Como Caracter;
+	Definir eleccion  como real;
+	Definir name Como Caracter;
+	
+	Repetir
+		Escribir "Menu de usuario";
+		Escribir "1. Captura nombre";
+		Escribir "2. Saludar persona";
+		Escribir "3. Salir del sistema";
+		leer eleccions;
+		eleccion<-ConvertirANumero(eleccions);
+		
+		Si eleccion=1 Entonces
+			Escribir "Como es tu nombre?";
+			Leer name;
+			
+			
+		FinSi
+		Si eleccion=2 Entonces
+			Escribir "Hola ", name;
+		FinSi
+		Si eleccion >= 4 Entonces
+			Escribir "Eleccion invalida, digite una correcta";
+		FinSi
+		
+	Hasta Que eleccion=3
+	Si eleccion=3 Entonces
+		Escribir "Cerrando programa";
+	FinSi
+	
+FinProceso
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- segundo cuadro -->
+            <b>
+              6. Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es menor a 18 años, deberá mostrar en
+              pantalla: Usted aún es un niño(a).
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso sin_titulo
+	Definir telefono, nombre, nombre1, nombre2, nombre3, telefono1, telefono2, telefono3, organizacion1, organizacion2, organizacion3, organizacion Como Caracter;
+	Definir eleccion, eleccionmainmenu, eleccionsubmenu, eleccionsubsubmenu Como entero;
+	organizacion1<-"         ";
+	organizacion2<-"         ";
+	organizacion3<-"         ";
+	nombre1<-"         ";
+	nombre2<-"         ";
+	nombre3<-"         ";
+	telefono1<-"         ";
+	telefono2<-"         ";
+	telefono3<-"         ";
+	
+	
+	
+	Repetir
+		mainmenu;
+		leer eleccionmainmenu;
+		Segun eleccionmainmenu Hacer
+			
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			1: repetir
+					Escribir "1.-Nombre: ", nombre1, " 	-Telefono: ", telefono1, " -Organizacion: ", organizacion1; Escribir "2.-Nombre: ", nombre2, " -Telefono: ", telefono2, " -Organizacion:", organizacion2;
+					Escribir "3.-Nombre: ", nombre3, " -Telefono: ", telefono3, " -Organizacion: ", organizacion3; Escribir "4. Volver"; Escribir "En cual espacio desea agregar el contacto?";
+					leer eleccionsubmenu;
+					Si eleccionsubmenu = 1 Entonces
+						Escribir "Ingrese los datos del contacto, ", "Nombre completo";
+						leer nombre;
+						nombre1<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) o (telefono<>telefono2) o (telefono<>telefono3);
+							telefono1<-telefono;	
+							
+						SiNo
+							telefono1<-telefono;	
+						FinSi
+						
+						
+						Escribir "Nombre de la organizacion";
+						leer organizacion;
+						organizacion1<-organizacion;
+						
+					FinSi
+					Si eleccionsubmenu = 2 Entonces
+						Escribir "Ingrese los datos del contacto, ", "Nombre completo";
+						leer nombre;
+						nombre2<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) o (telefono=telefono2) o (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) y (telefono<>telefono2) y (telefono<>telefono3);
+							telefono2<-telefono;	
+						SiNo
+							telefono2<-telefono;	
+						FinSi
+						Escribir "Nombre de la organizacion";
+						leer organizacion;
+						organizacion2<-organizacion;
+					FinSi
+					si eleccionsubmenu = 3 Entonces
+						Escribir "Ingrese los datos del contacto, ", "Nombre completo";
+						leer nombre;
+						nombre3<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) o (telefono=telefono2) o (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) y (telefono<>telefono2) y (telefono<>telefono3);
+							telefono3<-telefono;	
+						SiNo
+							telefono3<-telefono;	
+						FinSi
+						
+						Escribir "Nombre de la organizacion";
+						leer organizacion;
+						organizacion3<-organizacion;
+					FinSi
+					
+					
+					
+				Hasta Que eleccionsubmenu=4;
+				
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			2: repetir
+					Escribir "Cual contacto desea consultar?";
+					Escribir "1. ", nombre1;
+					Escribir "2. ", nombre2;
+					Escribir "3. ", nombre3;
+					Escribir "4. Volver";
+					leer eleccionsubmenu;
+					repetir
+						si eleccionsubmenu=1 Entonces
+							Escribir "1. Nombre: ", nombre1, "-Telefono:", telefono1, "-Organizacion: ", organizacion1;
+							Escribir "";
+							Escribir "Cual contacto desea consultar?";
+							Escribir "1. ", nombre1;
+							Escribir "2. ", nombre2;
+							Escribir "3. ", nombre3;
+							Escribir "4. Volver";
+							leer eleccionsubmenu;
+							Escribir "";
+							
+							
+							
+						FinSi
+						si eleccionsubmenu=2 Entonces
+							Escribir "2. Nombre: ", nombre2, "-Telefono:", telefono2, "-Organizacion:", organizacion2;
+							Escribir "";
+							Escribir "Cual contacto desea consultar?";
+							Escribir "1. ", nombre1;
+							Escribir "2. ", nombre2;
+							Escribir "3. ", nombre3;
+							Escribir "4. Volver";
+							leer eleccionsubmenu;
+							
+							
+						FinSi
+						si eleccionsubmenu=3 Entonces
+							Escribir "3. Nombre: ", nombre3, "-Telefono:", telefono3, "-Organizacion:", organizacion3;
+							Escribir "";
+							Escribir "Cual contacto desea consultar?";
+							Escribir "1. ", nombre1;
+							Escribir "2. ", nombre2;
+							Escribir "3. ", nombre3;
+							Escribir "4. Volver";
+							leer eleccionsubmenu;
+							
+							
+						FinSi
+						
+					Hasta Que eleccionsubmenu>=4
+				Hasta Que eleccionsubmenu>=4
+				
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+				
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			3: repetir 
+					escribir "Que contacto desea eliminar?";
+					Escribir "1. ", nombre1;
+					Escribir "2. ", nombre2;
+					Escribir "3. ", nombre3;
+					Escribir "4. Volver";
+					leer eleccion;
+					Segun eleccion Hacer
+						1: nombre1<-" ";
+							telefono1<-" ";
+							organizacion1<-" ";
+						2:nombre2<-" ";
+							telefono2<-" ";
+							organizacion2<-" ";
+						3:nombre3<-" ";
+							telefono3<-" ";
+							organizacion3<-" ";
+					FinSegun
+				Hasta Que eleccion>=4
+				
+				
+				
+				
+				
+		FinSegun
+		
+	Hasta Que eleccionmainmenu=4
+	
+	
+	FinProceso
+	
+	//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+	//--MENU PRINCIPAL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+	//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+	
+	SubProceso mainmenu()
+	Escribir "1. Add contacto";
+	Escribir "2. Buscar contacto";
+	Escribir "3. Eliminar contacto";
+	Escribir "4. Salir del sistema";
+FinSubProceso
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//------------SUBMENU ADICION-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+SubProceso submenu1()
+	Definir telefono, nombre, nombre1, nombre2, nombre3, telefono1, telefono2, telefono3, organizacion1, organizacion2, organizacion3, organizacion Como Caracter;
+	Definir eleccion, eleccionmainmenu, eleccionsubmenu, eleccionsubsubmenu Como entero;
+	organizacion1<-" ";
+	organizacion2<-" ";
+	organizacion3<-" ";
+	nombre1<-" ";
+	nombre2<-" ";
+	nombre3<-" ";
+	telefono1<-" ";
+	telefono2<-" ";
+	telefono3<-" ";
+	Escribir "1.-Nombre: ", nombre1, " 	-Telefono: ", telefono1, " -Organizacion: ", organizacion1; Escribir "2.-Nombre: ", nombre2, " -Telefono: ", telefono2, " -Organizacion:", organizacion2;
+	Escribir "3.-Nombre: ", nombre3, " -Telefono: ", telefono3, " -Organizacion: ", organizacion3; Escribir "4. Volver"; Escribir "En cual espacio desea agregar el contacto?";
+FinSubProceso
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//------------SUBMENU ADICION-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+SubProceso elecsubmenu(1)
+	Definir telefono, nombre, nombre1, nombre2, nombre3, telefono1, telefono2, telefono3, organizacion1, organizacion2, organizacion3, organizacion Como Caracter;
+	Definir eleccion, eleccionmainmenu, eleccionsubmenu, eleccionsubsubmenu Como entero;
+	organizacion1<-" ";
+	organizacion2<-" ";
+	organizacion3<-" ";
+	nombre1<-" ";
+	nombre2<-" ";
+	nombre3<-" ";
+	telefono1<-" ";
+	telefono2<-" ";
+	telefono3<-" ";
+
+	leer eleccionsubmenu;
+		Si eleccionsubmenu = 1 Entonces
+			Escribir "Ingrese los datos del contacto, ", "Nombre completo";
+			leer nombre;
+			nombre1<-nombre;
+			Escribir "Ingrese numero telefonico";
+			leer telefono;
+			si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+				Repetir
+					Escribir "Numero repetido, ingrese uno diferente";
+					leer telefono;
+					
+				Hasta Que (telefono<>telefono1) y (telefono<>telefono2) y (telefono<>telefono3);
+			SiNo
+				telefono1<-telefono;	
+			FinSi
+			
+			
+			Escribir "Nombre de la organizacion";
+			leer organizacion;
+			organizacion1<-organizacion;
+			
+		FinSi
+		Si eleccionsubmenu = 2 Entonces
+			Escribir "Ingrese los datos del contacto, ", "Nombre completo";
+			leer nombre;
+			nombre2<-nombre;
+			Escribir "Ingrese numero telefonico";
+			leer telefono;
+			si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+				Repetir
+					Escribir "Numero repetido, ingrese uno diferente";
+					leer telefono;
+					
+				Hasta Que (telefono<>telefono1) y (telefono<>telefono2) y (telefono<>telefono3);
+			SiNo
+				telefono2<-telefono;	
+			FinSi
+			Escribir "Nombre de la organizacion";
+			leer organizacion;
+			organizacion2<-organizacion;
+		FinSi
+		si eleccionsubmenu = 3 Entonces
+			Escribir "Ingrese los datos del contacto, ", "Nombre completo";
+			leer nombre;
+			nombre3<-nombre;
+			Escribir "Ingrese numero telefonico";
+			leer telefono;
+			si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+				Repetir
+					Escribir "Numero repetido, ingrese uno diferente";
+					leer telefono;
+					
+				Hasta Que (telefono<>telefono1) y (telefono<>telefono2) y (telefono<>telefono3);
+			SiNo
+				telefono3<-telefono;	
+			FinSi
+			
+			Escribir "Nombre de la organizacion";
+			leer organizacion;
+			organizacion3<-organizacion;
+		FinSi
+		
+	
+	
+	
+	
+FinSubProceso
+
+
+          </code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- primer cuadro -->
+            <b>
+              7. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Soluta harum accusantium possimus? Enim temporibus corporis
+              ducimus itaque voluptate explicabo ratione, cum, tenetur aut ipsum
+              recusandae dolores, iure atque quod et!
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+            
+  Proceso sin_titulo
+	Definir telefono, nombre, nombre1, nombre2, nombre3, telefono1,  telefono2, telefono3, telefono4, telefono5, marca1, marca2, marca3, marca4, marca5, placa, nombre4, nombre5, eleccionsubmenu Como Caracter;
+	Definir  marca, placa1, placa2, placa3, placa4, placa5 Como Caracter;
+	Definir eleccion, eleccionmainmenu,  eleccionsubsubmenu Como entero;
+	
+	marca1<-"         ";
+	marca2<-"         ";
+	marca3<-"         ";
+	marca4<-"         ";
+	marca5<-"         ";
+	nombre1<-"   Libre      ";
+	nombre2<-"   Libre      ";
+	nombre3<-"   Libre      ";
+	nombre4<-"   Libre      ";
+	nombre5<-"   Libre      ";
+	telefono1<-"         ";
+	telefono2<-"         ";
+	telefono3<-"         ";
+	telefono4<-"         ";
+	telefono5<-"         ";
+	placa1<-"   Libre      ";
+	placa2<-"   Libre      ";
+	placa3<-"   Libre      ";
+	placa4<-"   Libre      ";
+	placa5<-"   Libre      ";
+	
+	
+	
+	Repetir
+		mainmenu;
+		leer eleccionmainmenu;
+		Segun eleccionmainmenu Hacer
+			
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+				//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			1: repetir
+					Escribir "1. ", nombre1;
+           Escribir "2. " , nombre2; Escribir "3. ", nombre3; Escribir "4. ", nombre4; Escribir "5. ",
+            nombre5; Escribir "6. Volver", ; Escribir "En cual espacio ingresar el vehiculo?";
+					leer eleccionsubmenu;
+					Si eleccionsubmenu = ConvertirATexto(1) Entonces
+						Escribir "Ingrese los datos del usuario, ", "Nombre completo";
+						leer nombre;
+						nombre1<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) y (telefono=telefono2) y 
+            (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) o (telefono<>telefono2) o (telefono<>telefono3);
+							telefono1<-telefono;	
+							
+						SiNo
+							telefono1<-telefono;	
+						FinSi
+						
+						
+						Escribir "Indique marca del vehiculo";
+						leer marca;
+						marca1<-marca;
+						Escribir "Indique placa del vehiculo";
+						leer placa;
+						placa1<-placa;
+						
+					FinSi
+					Si eleccionsubmenu = ConvertirATexto(2) Entonces
+						Escribir "Ingrese los datos del usuario, ",
+             "Nombre completo";
+						leer nombre;
+						nombre2<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) y (telefono=telefono2) y 
+            (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) o (telefono<>telefono2) o (telefono<>telefono3);
+							telefono2<-telefono;	
+							
+						SiNo
+							telefono2<-telefono;	
+						FinSi
+						
+						
+						Escribir "Indique marca del vehiculo";
+						leer marca;
+						marca2<-marca;
+						Escribir "Indique placa del vehiculo";
+						leer placa;
+						placa2<-placa;
+					FinSi
+					
+					
+					
+					si eleccionsubmenu = ConvertirATexto(3) Entonces
+						Escribir "Ingrese los datos del usuario, ", "Nombre completo";
+						leer nombre;
+						nombre3<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) o (telefono<>telefono2) o (telefono<>telefono3);
+							telefono3<-telefono;	
+							
+						SiNo
+							telefono3<-telefono;	
+						FinSi
+						
+						
+						Escribir "Indique marca del vehiculo";
+						leer marca;
+						marca3<-marca;
+						Escribir "Indique placa del vehiculo";
+						leer placa;
+						placa3<-placa;
+					FinSi
+					si eleccionsubmenu = ConvertirATexto(4) Entonces
+						Escribir "Ingrese los datos del usuario, ", "Nombre completo";
+						leer nombre;
+						nombre4<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) o (telefono<>telefono2) o (telefono<>telefono3);
+							telefono4<-telefono;	
+							
+						SiNo
+							telefono4<-telefono;	
+						FinSi
+						
+						
+						Escribir "Indique marca del vehiculo";
+						leer marca;
+						marca4<-marca;
+						Escribir "Indique placa del vehiculo";
+						leer placa;
+						placa4<-placa;
+					FinSi
+					si eleccionsubmenu = ConvertirATexto(5) Entonces
+						Escribir "Ingrese los datos del usuario, ", "Nombre completo";
+						leer nombre;
+						nombre3<-nombre;
+						Escribir "Ingrese numero telefonico";
+						leer telefono;
+						si (telefono=telefono1) y (telefono=telefono2) y (telefono=telefono3) Entonces
+							Repetir
+								Escribir "Numero repetido, ingrese uno diferente";
+								leer telefono;
+								
+							Hasta Que (telefono<>telefono1) o (telefono<>telefono2) o (telefono<>telefono3);
+							telefono3<-telefono;	
+							
+						SiNo
+							telefono3<-telefono;	
+						FinSi
+						
+						
+						Escribir "Indique marca del vehiculo";
+						leer marca;
+						marca3<-marca;
+						Escribir "Indique placa del vehiculo";
+						leer placa;
+						placa3<-placa;
+					FinSi
+					
+					
+					
+				Hasta Que eleccionsubmenu=ConvertirATexto(6);
+				
+				//---------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------------------------
+        --------------------------//
+				//-----------------------------------------------
+        ------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			2: repetir
+					Escribir "Indique la placa a consultar consultar o volver?";
+					Escribir "6. Volver";
+					leer eleccionsubmenu;
+					
+					repetir
+						
+						si eleccionsubmenu=placa1 o eleccionsubmenu=placa2 o eleccionsubmenu=placa3 o eleccionsubmenu=placa4 o eleccionsubmenu=placa5 Entonces
+							Escribir "El vehiculo esta en el parqueadero";
+							
+						SiNo
+							Escribir "El vehiculo no esta en el parqueadero";
+							escribir "Presione cualquer tecla para continuar";
+							
+							Esperar Tecla;
+							
+							
+							
+							
+							
+							
+						FinSi
+						Escribir "Indique la placa a consultar consultar o volver?";
+						Escribir "6. Volver";
+						leer eleccionsubmenu;
+						
+				
+						
+					Hasta Que eleccionsubmenu>=ConvertirATexto(6)
+				Hasta Que eleccionsubmenu>=ConvertirATexto(6)
+				
+				//------------------------------------------------
+        ----------------------------------------------------------------------------------------------------------------------------
+        -------------------------------//
+				
+				//------------------------------------------------
+        -------------------------------------------
+        ---------------------------------------------
+        ---------------------------------
+        ----------------------------------//
+			3: repetir 
+					escribir "Que vehiculo retirar?";
+					Escribir "1. ", nombre1, "     ", placa1;
+					Escribir "2. ", nombre2, "     ", placa2;
+					Escribir "3. ", nombre3, "     ",  placa3;
+					Escribir "4. ", nombre4, "     ", placa4;
+					Escribir "5. ", nombre5, "     ", placa5; Escribir "6. Volver";
+					leer eleccion;
+					Segun eleccion Hacer
+						1: nombre1<-"   Libre      ";
+							telefono1<-"   Libre ";
+							marca1<-"   Libre ";
+							placa1<-"   Libre      ";
+						2:nombre2<-"   Libre      ";
+							telefono2<-" ";
+							marca2<-" ";
+							placa2<-" ";
+						3:nombre3<-"   Libre      ";
+							telefono3<-" ";
+							marca3<-" ";
+							placa3<-" ";
+						4:nombre4<-"   Libre      ";
+							telefono4<-" ";
+							marca4<-" ";
+							placa4<-" ";
+						5:nombre5<-"   Libre      ";
+							telefono5<-" ";
+							marca5<-" ";
+							placa5<-"   Libre      ";
+					FinSegun
+				Hasta Que eleccion=6
+				
+				
+				
+				
+				
+		FinSegun
+		
+	Hasta Que eleccionmainmenu=4
+FinProceso
+
+
+
+
+SubProceso mainmenu()
+	Limpiar Pantalla;
+	Escribir "PARQUEADERO EL GUARDIAN, CONTROL DE ENTRADA Y SALIDA DE VEHICULOS";
+	Escribir "1. Ingresar al parqueadero";
+	Escribir "2. Consultar si vehiculo se encuentra en parqueadero por la placa";
+	Escribir "3. Retirar vehiculo del parqueadero ";
+	Escribir "4. Salir del sistema";
+FinSubProceso
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- segundo cuadro -->
+            <b>
+              8. La escuela automovilística "El Maestro" requiere una aplicación
+              que permita registrar a sus clientes en los cursos de enseñanza
+              automovilística y establecer quienes lo han aprobado para
+              continuar con el trámite de adquirir la licencia de conducción.
+              Para cada usuario se debe permitir registrar su ingreso al curso,
+              consultar usuarios que hayan presentado el curso y resultados de
+              la prueba del curso (si fueron aprobados o no). Recuerde que el
+              sistema debe terminar cuando el usuario así lo indique. Tenga
+              presente que la escuela tiene capacidad máxima de gestionar 8
+              usuarios en su totalidad.
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso sin_titulo
+
+	Definir eleccionmenu, elecestado, lugar Como Real;
+	definir nombre, nombre1, nombre2, nombre3, nombre4, nombre5, nombre6, nombre7, nombre8, apro, desa Como Caracter;
+	Definir estado1, estado2, estado3, estado4, estado5, estado6, estado7, estado8, estado Como Logico;
+	nombre1<-"              ";
+	nombre2<-"              ";
+	nombre3<-"              ";
+	nombre4<-"              ";
+	nombre5<-"              ";
+	nombre6<-"              ";
+	nombre7<-"              ";
+	nombre8<-"              ";
+	estado1<-Falso;
+	estado2<-Falso;
+	estado3<-Falso;
+	estado4<-Falso;
+	estado5<-Falso;
+	estado6<-Falso;
+	estado7<-Falso;
+	estado8<-Falso;
+	apro<-"Aprobado";
+	desa<-"Desaprobado";
+	
+	
+	Repetir
+		Limpiar Pantalla;
+		mainmenu();
+		leer eleccionmenu;
+		
+		Segun eleccionmenu Hacer
+			
+			
+			1: repetir
+					Limpiar Pantalla;
+					Escribir "1. ", nombre1; Escribir "2. ", nombre2; Escribir  "3. ", nombre3; escribir "4. ", nombre4; Escribir "5. ", nombre5;
+					Escribir "6. ", nombre6; Escribir "7. ", nombre7; Escribir "8. ", nombre8; Escribir "9. Volver"; Escribir "En que espacio desea registrar la informacion";
+					leer lugar;
+					Si lugar > 0 y lugar<9  Entonces
+						Escribir "Nombre del cliente";
+						leer nombre;
+						Escribir "Estado del cliente";
+						Escribir "1. Aprobado";
+						Escribir "2. Reprobado";
+						
+						Repetir
+							leer elecestado;
+							Segun elecestado Hacer
+								1: Escribir "Aprobado, "; sin saltar Escribir "Registro exitoso";
+									estado<-Verdadero;
+								2: escribir "Reprobado, "; sin saltar Escribir "Registro exitoso";
+									estado<-Falso;
+									
+								De Otro Modo:
+									Escribir "Opcion no valida";
+									Escribir "1. Aprobado";
+									Escribir "2. Reprobado";
+									
+									
+							FinSegun
+							Escribir "Presione cualquier tecla";
+							Esperar Tecla;
+							
+						Hasta Que elecestado=1 o elecestado=2
+						
+					FinSi
+					
+					
+					
+					Segun lugar Hacer
+						1: nombre1<-nombre;
+							estado1<-estado;
+							
+						2: nombre2<-nombre;
+							estado2<-estado;
+							
+						3:  nombre3<-nombre;
+							estado3<-estado;
+						4: nombre4<-nombre;
+							estado4<-estado;
+							
+						5: nombre5<-nombre;
+							estado5<-estado;
+							
+						6: nombre6<-nombre;
+							estado6<-estado;
+							
+						7: nombre7<-nombre;
+							estado7<-estado;
+							
+						8: nombre8<-nombre;
+							estado8<-estado;
+							
+						9: lugar<-9;
+							
+							
+							
+					FinSegun
+				Hasta Que lugar=9
+			2: Escribir "Registro de estado de usuarios"; Escribir "Verdadero: Aprobado      Falso: Reprobado";
+				Escribir "1. ", nombre1 ; Sin Saltar escribir ": ", estado1; Escribir "2. ", nombre2, ": ", estado2; Escribir "3. ", nombre3, ": ", estado3; Escribir "4. ", nombre4, ": ", estado4; 
+				Escribir "1. ", nombre5,": ",	 estado5;Escribir "1. ", nombre6, ": ", estado6;Escribir "1. ", nombre7, ": ", estado7;Escribir "1. ", nombre8, ": ", estado8;
+				Esperar Tecla;
+				
+				
+				
+				
+				
+				
+				
+				
+		FinSegun
+		
+		
+	Hasta Que eleccionmenu=3;
+	
+	
+FinProceso
+
+
+	
+SubProceso mainmenu()
+	Escribir "ESCUELA AUTOMOVILISTICA EL MAESTRO, CONTROL USUARIOS ACTIVOS";
+	Escribir "1. Registrar cliente";
+	Escribir "2. Consultar estado clientes";
+	Escribir "3. Salir del sistema";
+FinSubProceso
+          </code></pre>
+        </div>
+      </main>
+
+      <div class="iconflecha">
+        <a href="pseinttaller1.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a href="pseinttaller3.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>

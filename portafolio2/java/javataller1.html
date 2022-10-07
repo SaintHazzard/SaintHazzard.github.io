@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java taller 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >RepositorioGithub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="tesito">
+        <img class="javita" src="../assets/tesito.jpg" alt="">
+      </div>
+      <main class="maintaller">
+        <h3>Taller 1</h3>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              1. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  package T1;
+
+import java.util.Scanner;
+
+public class taller11 {
+    private static String name;
+    private static String apellido;
+    private static Double estatura;
+    private static int edad;
+
+    public taller11() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Escriba su nombre");
+        name = input.nextLine();
+        System.out.println("Escriba su apellido");
+        apellido = input.nextLine();
+    }
+}
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              2. Realizar un programa el cual solicite su nombre, apellidos,
+              edad y estatura.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  package T1;
+
+import java.util.Scanner;
+
+public class taller12 {
+    private static String name;
+    private static String apellido;
+    private static Double estatura;
+    private static int edad;
+
+    public taller12() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Escriba su nombre");
+        name = input.nextLine();
+        System.out.println("Escriba su apellido");
+        apellido = input.nextLine();
+        System.out.println("Escriba su edad");
+        edad = input.nextInt();
+        System.out.println("Escriba su altura en metros");
+        estatura = input.nextDouble();
+        System.out.println("Yo soy " + name + " " + apellido + " tengo " + edad + " y mido " + estatura);
+    }
+}
+          </code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              3. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code class="">
+            package T1;
+
+import java.util.Scanner;
+
+public class taller13 {
+    private static String name;
+    private static String fathername;
+    private static String mothername;
+
+    public taller13() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Escriba su nombre completo");
+        name = input.nextLine();
+        System.out.println("Escriba el nombre de su madre");
+        mothername = input.nextLine();
+        System.out.println("Escriba el nombre de su padre");
+        fathername = input.nextLine();
+        System.out.println("Yo " + name + " soy hijo de " + fathername + " y " + mothername);
+    }
+}
+        </code></pre>
+        </div>
+
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              4. Realizar un programa el cual solicite el nombre de una ciudad
+              capital y el país. Al finalizar debe imprimir en pantalla el
+              siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital
+              del país [Nombre del País]</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+package T1;
+
+import java.util.Scanner;
+
+public class taller14 {
+    private static String capital;
+    private static String pais;
+
+    public taller14() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Escriba el nombre el pais");
+        pais = input.nextLine();
+        System.out.println("Escriba el nombre la capital");
+        capital = input.nextLine();
+        System.out.println("La ciudad de " + capital + " es la capital de " + pais);
+    }
+}
+          </code></pre>
+        </div>
+      </main>
+
+      <main class="maintaller">
+        <!-- Segunda linea de cuadros -->
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              5. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+            package T1;
+
+
+import java.util.Scanner;
+
+public class taller15 {
+    private static String npet;
+    private static String nameme;
+    private static String typepet;
+    private static int agepet;
+
+    public taller15() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Nombre de la mascota");
+        npet = input.nextLine();
+        System.out.println("Tipo de la mascota");
+        typepet = input.nextLine();
+        System.out.println("Edad de la mascota");
+        agepet = input.nextInt();
+        System.out.println("Nombre del duenio");
+        nameme = input.next();
+        System.out.println(npet + " es un(a) " + typepet + " el cual, tiene " + agepet + " anios de edad y " + nameme + " es actualmente su duenio(a)");
+    }
+}
+          
+            
+
+
+        </code></pre>
+        </div>
+      </main>
+      <div class="iconflecha">
+        <a href="../index.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a href="../java/javataller2.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>

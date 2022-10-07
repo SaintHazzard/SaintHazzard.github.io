@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java taller 4</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >RepositorioGithub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="tesito">
+        <img class="javita" src="../assets/tesito.jpg" alt="">
+      </div>
+      <main class="maintaller">
+        <h3>Taller 4</h3>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              1. Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:
+[0] = 55
+[1] = 99
+[2] = 11
+[3] = 56
+[4] = 69</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T4;
+
+public class t41 {
+    public t41() {
+    }
+
+    public static void main(String[] args) {
+        int[] matriz = new int[]{55, 99, 11, 56, 69};
+
+        for(int i = 0; i < matriz.length; ++i) {
+            System.out.println("[" + i + "] = " + matriz[i]);
+        }
+
+    }
+}
+</code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              2. Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo
+Números pares: 2, 4, 6, 8, 10
+Números impares: 1, 3, 5, 7, 9</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T4;
+
+import java.util.Random;
+
+public class t42 {
+    public t42() {
+    }
+
+    public static void main(String[] args) {
+        Random azar = new Random();
+        int[][] matriz = new int[5][4];
+
+        int i;
+        int k;
+        for(i = 0; i <= 4; ++i) {
+            for(k = 0; k <= 3; ++k) {
+                matriz[i][k] = azar.nextInt(1, 100);
+            }
+        }
+
+        System.out.print("Numeros pares:");
+
+        for(i = 0; i <= 4; ++i) {
+            for(k = 0; k <= 3; ++k) {
+                if (matriz[i][k] % 2 == 0) {
+                    System.out.print(matriz[i][k]);
+                    System.out.print(" ");
+                }
+            }
+        }
+
+        System.out.println("");
+        System.out.print("Numeros impares:");
+
+        for(i = 0; i <= 4; ++i) {
+            for(k = 0; k <= 3; ++k) {
+                if (matriz[i][k] % 2 == 1) {
+                    System.out.print(matriz[i][k]);
+                    System.out.print(" ");
+                }
+            }
+        }
+
+    }
+}
+</code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              3. Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code class="">//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T4;
+
+public class t43 {
+    public t43() {
+    }
+
+    public static void main(String[] args) {
+        int primo = 0;
+
+        for(int i = 0; i <= 1000; ++i) {
+            for(int k = 1; k <= i; ++k) {
+                if (i % k == 0) {
+                    ++primo;
+                }
+            }
+
+            if (primo == 2) {
+                System.out.print(i);
+                System.out.print(" ");
+            }
+
+            primo = 0;
+        }
+
+    }
+}
+</code></pre>
+        </div>
+
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              4. Dada la siguiente matriz bidimensional, el cual debe de quemar en el código
+01 02 03 04 05
+06 07 08 09 10
+11 12 13 14 15
+16 17 18 19 20
+Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional.
+01 02 03 04 05
+10 09 08 07 06
+11 12 13 14 15
+20 19 18 17 16</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T4;
+
+public class t44 {
+    public t44() {
+    }
+
+    public static void main(String[] args) {
+        int[][] matriz = new int[][]{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}, {16, 17, 18, 19, 20}};
+
+        int i;
+        int k;
+        for(i = 0; i <= 0; ++i) {
+            for(k = 0; k <= 4; ++k) {
+                System.out.print(matriz[i][k]);
+                System.out.print("  ");
+            }
+        }
+
+        System.out.println("");
+
+        for(i = 1; i <= 1; ++i) {
+            for(k = 0; k <= 3; ++k) {
+                System.out.print("0" + matriz[i][k]);
+                System.out.print(" ");
+            }
+
+            System.out.println(matriz[1][4]);
+        }
+
+        for(i = 2; i <= 3; ++i) {
+            for(k = 0; k <= 4; ++k) {
+                System.out.print(matriz[i][k]);
+                System.out.print(" ");
+            }
+
+            System.out.println(" ");
+        }
+
+
+    }
+}
+</code></pre>
+        </div>
+      </main>
+
+      <main class="maintaller">
+        <!-- Segunda linea de cuadros -->
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              5. Se debe de imprimir el siguiente cuadro</b
+            >
+          </p>
+          <pre class="panel panel-none"><img src="https://cdn.talentlms.com/sofkauniversity/1644205032_14.%20taller.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6XC9cL2Nkbi50YWxlbnRsbXMuY29tXC9zb2ZrYXVuaXZlcnNpdHlcLzE2NDQyMDUwMzJfMTQuJTIwdGFsbGVyLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY2NTE4NzIwMH19fV19&Signature=nCRxfZw7QDzY9jWcfETj9xGhHvmR94QHPhs62r5UEfphrACUXBI77NqavDi3tWcGeoRknaoxqHBIqP8z7Irdukz0o3Fn9OlfgkKnuCSinUgG4FTnDAzpdYrGEEfmb0syXr-1wwtCIQyEJ0PWP74PDBhJbSt9UMzNLWENAtoqKetN5NUWHnyDFpZFEbqcNOzdh8Q7Em5meS-x6w%2Fo9kvxMkXtvgr1JeThNj6PdrZAG6VbpAr0I1mKSXWi8OdR5mHzxNqw4f1JnekwKyLdBXIz2PJUOrBJcubNEoObE6fJZtVvt41WXwpTQXa4s8VO3i9zRg6EtkCsCIZpz9%2FbvrK4SA__&Key-Pair-Id=APKAJDCWVQTW4P3KI3XA" alt=""><code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T4;
+
+import java.util.Scanner;
+
+public class t45 {
+    public t45() {
+    }
+
+    public static void main(String[] args) {
+        int[][] matriz1 = new int[10][10];
+        int[][] matriz2 = new int[10][10];
+        int[][] matriz3 = new int[10][10];
+        int[] columnas = new int[10];
+        String[] var10000 = new String[]{"F", "I", "L", "A", "S"};
+        int k = true;
+        int i = true;
+        int a = 1;
+
+        int k;
+        int i;
+        for(i = 0; i <= 9; ++i) {
+            for(k = 0; k <= 9; ++k) {
+                matriz1[i][k] = a++;
+            }
+
+            a = 1;
+        }
+
+        for(i = 0; i <= 9; ++i) {
+            for(k = 0; k <= 9; ++k) {
+                matriz2[i][k] = a;
+            }
+
+            ++a;
+        }
+
+        for(i = 0; i < 10; ++i) {
+            for(k = 0; k < 10; ++k) {
+                matriz3[i][k] = matriz1[i][k] * matriz2[i][k];
+            }
+        }
+
+        System.out.println("              C   O     L    U      M      N     A      S");
+
+        for(i = 0; i < 10; columnas[i] = i++) {
+        }
+
+        System.out.print("    ");
+
+        for(i = 0; i < 10; ++i) {
+            System.out.print("  " + columnas[i] + "      ");
+        }
+
+        System.out.println("");
+        System.out.println("  |--------------------------------------------------------------------------------------|");
+
+        for(i = 0; i < 9; ++i) {
+            for(k = 0; k < 10; ++k) {
+                if (k < 1) {
+                    System.out.print(columnas[i] + " | " + matriz1[i][k] + "*" + matriz2[i][k] + "|");
+                    System.out.print(" ");
+                } else {
+                    System.out.print(" | " + matriz1[i][k] + "*" + matriz2[i][k] + " |");
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println("");
+            System.out.println("  |--------------------------------------------------------------------------------------|");
+        }
+
+        for(i = 0; i < 9; ++i) {
+            for(k = 0; k < 10; ++k) {
+                if (k < 1) {
+                    System.out.print(columnas[i] + " | " + matriz1[i][k] + "*" + matriz2[i][k] + "|");
+                    System.out.print(" ");
+                } else {
+                    System.out.print(" | " + matriz1[i][k] + "*" + matriz2[i][k] + " |");
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println("");
+            System.out.println("  |--------------------------------------------------------------------------------------|");
+        }
+
+        for(i = 0; i < 10; ++i) {
+            for(k = 9; k < 10; ++k) {
+                if (i == 0 && k == 9) {
+                    System.out.print(columnas[k] + " |" + matriz1[i][k] + "*" + matriz2[i][k] + "|");
+                    System.out.print(" ");
+                } else {
+                    System.out.print(" | " + matriz2[i][k] + "*" + matriz1[i][k] + "|");
+                    System.out.print(" ");
+                }
+            }
+        }
+
+        System.out.println("");
+        System.out.println("  |--------------------------------------------------------------------------------------|");
+        System.out.println("");
+
+        for(i = 0; i < 10; ++i) {
+            for(k = 0; k < 10; ++k) {
+                System.out.print(matriz1[i][k]);
+                System.out.print(" ");
+            }
+
+            System.out.println("");
+        }
+
+        for(i = 0; i < 10; ++i) {
+            for(k = 0; k < 10; ++k) {
+                System.out.print(matriz2[i][k]);
+                System.out.print(" ");
+            }
+
+            System.out.println("");
+        }
+
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Indique fila");
+        int fila = sn.nextInt();
+        System.out.println("Indique colunna");
+        int columna = sn.nextInt();
+        System.out.println(matriz3[fila][columna]);
+    }
+}
+</code></pre>
+        </div>
+      </main>
+      <div class="iconflecha">
+        <a href="../index.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a href="../java/javataller2.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>

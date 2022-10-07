@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #191c32;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 1000px;
+  background-color: #191c32;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: #191c32;
+}
+
+.brand span {
+  color: #0a8049;
+}
+.menu {
+  display: flex;
+
+  width: 50%;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu .active {
+  color: #7fe7b7;
+}
+
+.menu a:hover {
+  color: #0a8049;
+  background-color: #fff;
+  transition: all 0.9s;
+}
+
+.main {
+  width: 80vw;
+  height: 30vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+}
+
+img {
+  object-fit: contain;
+  margin: auto;
+  width: 350px;
+  height: 450px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+span {
+  color: #7fe7b7;
+}
+
+.download {
+  padding: 10px 20px;
+  background-color: #7fe7b7;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.download:hover {
+  background-color: #fff;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  height: 1000px;
+  align-items: center;
+  background-color: #610404;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+  color: #fff;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #7fe7b7;
+}
+
+.divider {
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  width: 100vw;
+  height: 40vw;
+  align-items: center;
+  background-color: #fff;
+}
+
+.portfolio_cont {
+  border-radius: 10px;
+  width: 100%;
+  height: 34px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
+.portfolio_cont_scale {
+  height: 385px;
+}
+
+.acordeon {
+  text-align: center;
+  width: 50%;
+  background-color: #7fe7b7;
+  margin: auto;
+  border: 1px solid #191c32;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+.acordeon:hover {
+  background-color: #191c32;
+  color: #fff;
+}
+
+.panelindex {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.panel__casilla {
+  display: flex;
+  height: 20%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #610404;
+  border: #7fe7b7 solid 2px;
+  color: #fff;
+}
+
+#tituloportafolio {
+  text-align: center;
+}
+
+.panelindex p:hover {
+  background-color: #0a8049;
+}
+
+a {
+  text-decoration: none;
+}
+.maintaller {
+  background-color: #191c32;
+  width: 1405px;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+}
+
+.cuadrovideo {
+  width: 950px;
+  height: 650px;
+  margin: auto;
+  position: relative;
+}
+
+.pcontenido {
+  display: block;
+  height: 15%;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  text-align: justify;
+}
+.info_content {
+  width: 60%;
+  max-width: 60%;
+  height: min-content;
+  background-color: #fff;
+  margin: 30px auto 20px auto;
+}
+.fa-chevron-left::before {
+  background-color: #191c32;
+  transform: rotate(180deg);
+}
+
+.iconflecha {
+  height: 50px;
+  background-color: #191c32;
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#derecha {
+  transform: rotate(180deg);
+}
+.pcontenido:hover {
+  background-color: #7fe7b7;
+}
+.pcontenido:active {
+  background-color: #0a8049;
+}
+
+iframe {
+  background-color: #fff;
+  background-image: #fff;
+  opacity: 1;
+}
+
+pre {
+  box-sizing: border-box;
+  width: 100%;
+  height: min-content;
+  overflow: auto;
+  padding: 10px;
+}
+
+.code {
+  width: 500px;
+  height: fit-content;
+  font-size: 1.1em;
+  box-sizing: content-box;
+}
+
+.panel-none {
+  display: none;
+  width: 500px;
+}
+
+.flecha {
+  display: inline;
+  background-color: #0a8049;
+}
+
+.tesito{
+   display: flex;
+}
+
+.javita {
+    width: 850px;
+    height: 450px;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    color: #8b3b3b;
+    font-size: 50px;
+}
+
+
+/* SaintHazzard.github.io */

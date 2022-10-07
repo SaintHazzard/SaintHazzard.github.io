@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Taller 3</title>
+    <link rel="stylesheet" href="../estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >Repositorio GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="tesito">
+        <img class="javita" src="../assets/tesito.jpg" alt="">
+      </div>
+      <main class="maintaller">
+        <h3>Taller 3</h3>
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- primer cuadro -->
+            <b>
+              1. Realizar la siguiente figura por medio del ciclo Para
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3;
+
+public class taller31 {
+    public taller31() {
+    }
+
+    public static void main(String[] args) {
+        for(int i = 0; i <= 10; ++i) {
+            for(int k = 0; k <= 0 + i; ++k) {
+                System.out.print("*");
+            }
+
+            System.out.println("");
+        }
+
+    }
+}
+</code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <!-- segundo cuadro -->
+            <b>
+              2. Realizar la siguiente figura por medio del ciclo Mientras - Hacer
+            </b>
+          </p>
+          <pre class="panel panel-none"><code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3;
+
+public class taller32 {
+    public taller32() {
+    }
+
+    public static void main(String[] args) {
+        int i = 10;
+        int k = 1;
+
+        for(int l = -1; 0 <= i; k = 1) {
+            while(k <= i) {
+                System.out.print(" ");
+                ++k;
+            }
+
+            while(l <= 10 - k) {
+                System.out.print("*");
+                ++l;
+            }
+
+            l = -1;
+            System.out.println("");
+            --i;
+        }
+
+    }
+}
+</code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >3. Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3;
+
+public class taller33 {
+    public taller33() {
+    }
+
+    public static void main(String[] args) {
+        int i = 0;
+        int k = 10;
+        int contadoras = 9;
+        int l = 10;
+
+        do {
+            do {
+                System.out.print(" ");
+                ++i;
+            } while(i <= k);
+
+            do {
+                System.out.print("*");
+                ++i;
+            } while(i <= l * 2 - contadoras);
+
+            i = 0;
+            --contadoras;
+            System.out.println(" ");
+            --k;
+        } while(0 <= k);
+
+        int espacio;
+        for(espacio = 0; espacio <= 9; ++espacio) {
+            System.out.print(" ");
+        }
+
+        System.out.print("***");
+        System.out.println();
+
+        for(espacio = 0; espacio <= 9; ++espacio) {
+            System.out.print(" ");
+        }
+
+        System.out.print("***");
+        System.out.println();
+
+        for(espacio = 0; espacio <= 8; ++espacio) {
+            System.out.print(" ");
+        }
+
+        System.out.print("*****");
+        System.out.println();
+
+        for(espacio = 0; espacio <= 7; ++espacio) {
+            System.out.print(" ");
+        }
+
+        System.out.print("*******");
+    }
+}
+</code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >4. Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:
+
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3;
+
+import java.util.Scanner;
+
+public class taller34 {
+    public taller34() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Que tabla de multiplicar desea mostrar?");
+        int tabla = input.nextInt();
+
+        for(int k = 0; k <= 10; ++k) {
+            System.out.println("" + k + " x " + tabla + " = " + k * tabla);
+        }
+
+        System.out.println("");
+    }
+}
+</code></pre>
+        </div>
+      </main>
+
+      <main class="maintaller">
+        <!-- Segunda linea de cuadros -->
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >5. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3;
+
+import java.util.Scanner;
+
+public class taller35 {
+    public taller35() {
+    }
+
+    public static void main(String[] args) {
+        boolean salir = false;
+        String nombre = null;
+        Scanner input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
+
+        while(!salir) {
+            System.out.println("1. Captura nombre");
+            System.out.println("2. Saludar persona");
+            System.out.println("3. Salir del sistema");
+            int eleccion = input.nextInt();
+            switch (eleccion) {
+                case 1:
+                    System.out.println("Escribe tu nombre?");
+                    nombre = input2.nextLine();
+                    break;
+                case 2:
+                    System.out.println("Hola " + nombre);
+                    break;
+                case 3:
+                    System.out.println("Hasta pronto");
+                    salir = true;
+            }
+        }
+
+    }
+}
+</code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >6. Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller36;
+
+public class Agenda {
+    private Contacto[] contactos = new Contacto[2];
+
+    public Agenda() {
+    }
+
+    public void aniadirContacto(Contacto c) {
+        if (this.existeContacto(c)) {
+            System.out.println("El contacto ya existe");
+        } else if (this.agendallena()) {
+            System.out.println("Agenda llena");
+        } else {
+            boolean encontrado = false;
+
+            for(int i = 0; i < this.contactos.length & !encontrado; ++i) {
+                if (this.contactos[i] == null) {
+                    this.contactos[i] = c;
+                    encontrado = true;
+                }
+            }
+
+            if (encontrado) {
+                System.out.println("Contacto aniadido");
+            } else {
+                System.out.println("No se pudo aniadir");
+            }
+        }
+
+    }
+
+    public boolean existeContacto(Contacto c) {
+        for(int i = 0; i < this.contactos.length; ++i) {
+            if (this.contactos[i] != null && c.equals(this.contactos[i])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public void listarcontacto() {
+        for(int i = 0; i < this.contactos.length; ++i) {
+            if (this.contactos[i] != null) {
+                System.out.println(this.contactos[i]);
+            }
+        }
+
+    }
+
+    public void buscarnombre(String nombre) {
+        boolean encontrado = false;
+
+        for(int i = 0; i < this.contactos.length; ++i) {
+            if (this.contactos[i] != null && this.contactos[i].getNombre().equalsIgnoreCase(nombre)) {
+                Contacto var10001 = this.contactos[i];
+                System.out.println("Contacto encontrado, el telefono es " + var10001.getTelefono());
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No se encontro el contacto");
+        }
+
+    }
+
+    public boolean agendallena() {
+        for(int i = 0; i < this.contactos.length; ++i) {
+            if (this.contactos[i] == null) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void eliminarcontacto(Contacto c) {
+        boolean encontrado = false;
+
+        for(int i = 0; i < this.contactos.length; ++i) {
+            if (this.contactos[i] != null && this.contactos[i].equals1(c)) {
+                this.contactos[i] = null;
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No se encontro contacto");
+        } else {
+            System.out.println("Contacto eliminado");
+        }
+
+    }
+}
+
+</code>
+
+<code>
+    --------------------------------------------------------------------------------------------------------------------------
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller36;
+
+public class Contacto {
+    private String nombre;
+    private String organizacion;
+    private String telefono;
+
+    public Contacto(String nombre, String telefono, String organizacion) {
+        this.nombre = nombre;
+        this.organizacion = organizacion;
+        this.telefono = telefono;
+    }
+
+    public Contacto(String nombre) {
+        this.nombre = nombre;
+        this.organizacion = null;
+        this.telefono = null;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getOrganizacion() {
+        return this.organizacion;
+    }
+
+    public void setOrganizacion(String organizacion) {
+        this.organizacion = organizacion;
+    }
+
+    public String getTelefono() {
+        return this.telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public boolean equals(Contacto c) {
+        return this.telefono.equalsIgnoreCase(c.getTelefono());
+    }
+
+    public boolean equals1(Contacto c) {
+        return this.nombre.equalsIgnoreCase(c.getNombre());
+    }
+
+    public String toString() {
+        return "nombre= " + this.nombre + ", organizacion='" + this.organizacion + "', telefono=" + this.telefono;
+    }
+}
+
+</code>
+-----------------------------------------------------------------------------------------------------------------------------------
+<code>
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller36;
+
+import java.util.Scanner;
+
+public class taller36 {
+    public taller36() {
+    }
+
+    public static void main(String[] args) {
+        Scanner sn = new Scanner(System.in);
+        boolean salir = false;
+        Agenda agendatelefonica = new Agenda();
+
+        while(!salir) {
+            System.out.println("1. Aniadir contacto");
+            System.out.println("2. Buscar contacto");
+            System.out.println("3. Eliminar contacto");
+            System.out.println("4. Listar");
+            System.out.println("5. Salir");
+            System.out.println("Escribe una de las opciones");
+            int eleccion = sn.nextInt();
+            String nombre;
+            Contacto c;
+            switch (eleccion) {
+                case 1:
+                    System.out.println("Escribe nombre ");
+                    nombre = sn.next();
+                    System.out.println("Escriba telefono");
+                    String telefono = sn.next();
+                    System.out.println("Escriba organizacion");
+                    String organizacion = sn.next();
+                    c = new Contacto(nombre, telefono, organizacion);
+                    agendatelefonica.aniadirContacto(c);
+                    break;
+                case 2:
+                    System.out.println("Escribe nombre ");
+                    nombre = sn.next();
+                    agendatelefonica.buscarnombre(nombre);
+                    break;
+                case 3:
+                    System.out.println("Escribe nombre ");
+                    nombre = sn.next();
+                    c = new Contacto(nombre);
+                    agendatelefonica.eliminarcontacto(c);
+                    break;
+                case 4:
+                    agendatelefonica.listarcontacto();
+                    break;
+                case 5:
+                    salir = true;
+                default:
+                    System.out.println("Solo numeros entre 1 y 5");
+            }
+        }
+
+    }
+}
+
+</code>
+</pre>
+<pre class="panel panel-none"><code>
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller36;
+
+public class Contacto {
+    private String nombre;
+    private String organizacion;
+    private String telefono;
+
+    public Contacto(String nombre, String telefono, String organizacion) {
+        this.nombre = nombre;
+        this.organizacion = organizacion;
+        this.telefono = telefono;
+    }
+
+    public Contacto(String nombre) {
+        this.nombre = nombre;
+        this.organizacion = null;
+        this.telefono = null;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getOrganizacion() {
+        return this.organizacion;
+    }
+
+    public void setOrganizacion(String organizacion) {
+        this.organizacion = organizacion;
+    }
+
+    public String getTelefono() {
+        return this.telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public boolean equals(Contacto c) {
+        return this.telefono.equalsIgnoreCase(c.getTelefono());
+    }
+
+    public boolean equals1(Contacto c) {
+        return this.nombre.equalsIgnoreCase(c.getNombre());
+    }
+
+    public String toString() {
+        return "nombre= " + this.nombre + ", organizacion='" + this.organizacion + "', telefono=" + this.telefono;
+    }
+}
+
+</code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >7. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller37;
+
+public class atributos {
+    private String placa;
+    private String marca;
+    private String nombre;
+    private int telefono;
+
+    public atributos(String placa, String marca, String nombre, int telefono) {
+        this.placa = placa;
+        this.marca = marca;
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+
+    public atributos(String placa, String nombre) {
+        this.placa = placa;
+        this.nombre = nombre;
+    }
+
+    public String getPlaca() {
+        return this.placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getMarca() {
+        return this.marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getTelefono() {
+        return this.telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public boolean equalsplaca(atributos c) {
+        return this.placa.equalsIgnoreCase(c.getPlaca());
+    }
+
+    public boolean equalsnombre(atributos c) {
+        return this.nombre.equalsIgnoreCase(c.getNombre());
+    }
+
+    public String toString() {
+        return "Vehiculo registrado en el parqueadero: \n" + this.marca + " con placa " + this.placa;
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+</code>
+<code>
+  //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller37;
+
+public class datos {
+    private atributos[] stats = new atributos[5];
+
+    public datos() {
+    }
+
+    public void aniadircarro(atributos c) {
+        if (this.existecarro(c)) {
+            System.out.println("Vehiculo ya registrado");
+        } else if (!this.parqueaderolleno()) {
+            boolean encontrado = false;
+
+            for(int i = 0; i < this.stats.length & !encontrado; ++i) {
+                if (this.stats[i] == null) {
+                    this.stats[i] = c;
+                    encontrado = true;
+                }
+            }
+
+            if (encontrado) {
+                System.out.println("Vehiculo registrado");
+            } else {
+                System.out.println("No se pudo registrar");
+            }
+        }
+
+    }
+
+    public boolean existecarro(atributos c) {
+        for(int i = 0; i < this.stats.length; ++i) {
+            if (this.stats[i] != null && c.equals(this.stats[i])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public void listarvehiculos() {
+        for(int i = 0; i < this.stats.length; ++i) {
+            if (this.stats[i] != null) {
+                System.out.println(this.stats[i]);
+            }
+        }
+
+    }
+
+    public void buscarplaca(String placa) {
+        boolean encontrado = false;
+
+        for(int i = 0; i < this.stats.length; ++i) {
+            if (this.stats[i] != null && this.stats[i].getPlaca().equalsIgnoreCase(placa)) {
+                atributos var10001 = this.stats[i];
+                System.out.println("Vehiculo encontrado con placa " + var10001.getPlaca());
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No se encontro la placa");
+        }
+
+    }
+
+    public void retirarvehiculo(atributos c) {
+        boolean encontrado = false;
+
+        for(int i = 0; i < this.stats.length; ++i) {
+            if (this.stats[i] != null && this.stats[i].equalsnombre(c) && this.stats[i].equalsplaca(c)) {
+                this.stats[i] = null;
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("Datos incorrectos, no se puede retirar el vehiculo");
+        } else {
+            System.out.println("Vehiculo retirado");
+        }
+
+    }
+
+    public boolean parqueaderolleno() {
+        for(int i = 0; i < this.stats.length; ++i) {
+            if (this.stats[i] == null) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+------------------------------------------------------------------------------------------------------------------------  
+</code>
+<code>
+   //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller37;
+
+import java.util.Scanner;
+
+public class taller37 {
+    public taller37() {
+    }
+
+    public static void main(String[] args) {
+        Scanner sn = new Scanner(System.in);
+        datos registro = new datos();
+        boolean salir = false;
+
+        while(!salir) {
+            System.out.println("1. Registrar entrada de vehiculo");
+            System.out.println("2. Registrar salida de vehiculo");
+            System.out.println("3. Buscar por placa");
+            System.out.println("4. Listar");
+            System.out.println("5. Salir");
+            System.out.println("Escribe una de las opciones");
+            int eleccion = sn.nextInt();
+            String placa;
+            String nombre;
+            atributos c;
+            switch (eleccion) {
+                case 1:
+                    System.out.println("Placa del vehiculo");
+                    placa = sn.next();
+                    System.out.println("Marca del vehiculo");
+                    String marca = sn.next();
+                    System.out.println("Nombre del titular");
+                    nombre = sn.next();
+                    System.out.println("Telefono del titular");
+                    int telefono = sn.nextInt();
+                    c = new atributos(placa, marca, nombre, telefono);
+                    registro.aniadircarro(c);
+                    break;
+                case 2:
+                    System.out.println("Placa del vehiculo");
+                    placa = sn.next();
+                    System.out.println("Nombre del titular");
+                    nombre = sn.next();
+                    c = new atributos(placa, nombre);
+                    registro.retirarvehiculo(c);
+                    break;
+                case 3:
+                    System.out.println("Placa del vehiculo");
+                    placa = sn.next();
+                    registro.buscarplaca(placa);
+                    break;
+                case 4:
+                    registro.listarvehiculos();
+                    break;
+                case 5:
+                    salir = true;
+            }
+        }
+
+    }
+}
+ 
+</code>
+</pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b
+              >8. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.
+            </b>
+          </p>
+          <pre class="panel panel-none">
+<code>
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller38;
+
+public class cliente {
+    private String nombre;
+    private boolean estado;
+
+    public cliente(String nombre, boolean estado) {
+        this.nombre = nombre;
+        this.estado = estado;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public boolean isEstado() {
+        return this.estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public boolean equalsnombre(String nombre) {
+        return this.nombre.equalsIgnoreCase(this.getNombre());
+    }
+
+    public String toString() {
+        if (this.estado) {
+            this.estado = Boolean.parseBoolean("true");
+            return "Cliente: " + this.nombre + " , Estado en el curso: aprobado";
+        } else {
+            this.estado = Boolean.parseBoolean("false");
+            return "Cliente: " + this.nombre + " , Estado en el curso: reprobado";
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+</code>
+<code>
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller38;
+
+public class registro {
+    private cliente[] clientes = new cliente[8];
+
+    public registro() {
+    }
+
+    public void aniadircliente(cliente c) {
+        boolean encontrado = false;
+
+        for(int i = 0; i < this.clientes.length && !encontrado; ++i) {
+            if (this.clientes[i] == null) {
+                this.clientes[i] = c;
+                encontrado = true;
+            }
+        }
+
+        if (encontrado) {
+            System.out.println("Cliente registrado");
+        }
+
+    }
+
+    public void buscarnombre(String nombre) {
+        boolean encontrado = false;
+
+        for(int i = 0; i < this.clientes.length; ++i) {
+            if (this.clientes[i] != null && this.clientes[i].getNombre().equalsIgnoreCase(nombre)) {
+                cliente var10001;
+                if (this.clientes[i].isEstado()) {
+                    var10001 = this.clientes[i];
+                    System.out.println(var10001.getNombre() + " estado del curso aprobado ");
+                    encontrado = true;
+                }
+
+                if (!this.clientes[i].isEstado()) {
+                    var10001 = this.clientes[i];
+                    System.out.println(var10001.getNombre() + " estado del curso reprobado ");
+                    encontrado = true;
+                }
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println(" Usuario no registrado ");
+        }
+
+    }
+
+    public void listarclientes() {
+        for(int i = 0; i < this.clientes.length; ++i) {
+            if (this.clientes[i] != null) {
+                System.out.println(this.clientes[i]);
+            }
+        }
+
+    }
+
+    public boolean existeContacto(cliente c) {
+        for(int i = 0; i < this.clientes.length; ++i) {
+            if (this.clientes[i] != null && c.equals(this.clientes[i])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+---------------------------------------------------------------------------------------------------------------------
+</code>
+<code>
+    //
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package T3.taller38;
+
+import java.util.Scanner;
+
+public class taller38 {
+    public taller38() {
+    }
+
+    public static void main(String[] args) {
+        Scanner sn = new Scanner(System.in);
+        registro registrocliente = new registro();
+        boolean salir = false;
+
+        while(!salir) {
+            System.out.println("1. Registrar usuario");
+            System.out.println("2. Consultar por nombre de usuario");
+            System.out.println("3. Listar");
+            System.out.println("4. Salir");
+            System.out.println("Escribe una de las opciones");
+            int eleccion = sn.nextInt();
+            String nombre;
+            switch (eleccion) {
+                case 1:
+                    System.out.println("Nombre de usuario");
+                    nombre = sn.next();
+                    System.out.println("Estado del usuario en el curso, 1. Aprobado - 2.Reprobado");
+                    int elecestado = sn.nextInt();
+                    boolean estado = elecestado == 1;
+                    cliente c = new cliente(nombre, estado);
+                    registrocliente.aniadircliente(c);
+                    break;
+                case 2:
+                    System.out.println("Nombre de usuario");
+                    nombre = sn.next();
+                    registrocliente.buscarnombre(nombre);
+                    break;
+                case 3:
+                    registrocliente.listarclientes();
+                    break;
+                case 4:
+                    salir = true;
+            }
+        }
+
+    }
+}
+
+</code>
+</pre>
+        </div>
+        
+        <!-- meter el otro div derecho -->
+      </main>
+      <div class="iconflecha">
+        <a title="link" href="../java/javataller2.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a title="link" href="../java/javataller4.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseint Taller 1</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >RepositorioGithub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="cuadrovideo">
+        <iframe
+          class="video"
+          width="950"
+          height="650"
+          src="https://www.youtube.com/embed/nwLaFBYrcPI"
+          title="Taller1 Cantera1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              1. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso Talller "1.1"
+	Definir nombre, apellido, nombres, space, nombress Como Caracter;
+		Escribir "Escriba su nombre"; Leer nombre;
+		Escribir "Escriba sus apellidos"; Leer apellido;
+		
+		
+		Escribir 'Hola ', nombre," ", apellido;
+		
+	
+  FinProceso
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              2. Realizar un programa el cual solicite su nombre, apellidos,
+              edad y estatura.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso Taller "1.2"
+	Definir nombre, apellido, nombres, space, fullname Como Caracter;
+	Definir height, age como real;
+		Escribir "Write your name"; Leer nombre;
+		Escribir "Write your last name"; Leer apellido;
+		Escribir "How old are you?"; Leer age;
+		Escribir "what is your height in CM"; leer height;
+	
+	space<-" ";
+	
+			nombres<-Concatenar(nombre, space);
+			fullname<-Concatenar(nombres, apellido);
+	
+				Escribir 'Hello ', fullname; 
+				Escribir  "you have ", age, " years old"; 
+				Escribir  "and your tall is ", height, " cm";
+	
+	
+FinProceso
+          </code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              3. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code class="">
+            Proceso taller "1.3"
+	Definir nombre, apellido, nombres, space, nombress, nombremadre,
+   nombrepadre Como Caracter;
+		Escribir "Escriba su nombre"; Leer nombre;
+		Escribir "Escriba sus apellidos"; Leer apellido;
+		Escribir "Escriba el nombre de su madre"; leer nombremadre;
+		Escribir "Escriba el nombre de su padre"; leer nombrepadre;
+			space<-" ";
+	
+		nombres<-Concatenar(nombre, space);
+		nombress<-Concatenar(nombres, apellido);
+		Escribir 'Yo ', nombress, " soy hijo de ", nombremadre, " y " , nombrepadre;
+FinProceso
+          
+            
+
+
+        </code></pre>
+        </div>
+
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              4. Realizar un programa el cual solicite el nombre de una ciudad
+              capital y el país. Al finalizar debe imprimir en pantalla el
+              siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital
+              del país [Nombre del País]</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso Taller "1.4"
+	Definir pais, capital Como Caracter;
+	Escribir "Indique el pais ";
+	leer pais;
+	Escribir "Indique la capital del pais "; 
+	leer capital;
+	Escribir "La ciudad " , capital, " es la capital del país ", pais;
+	
+	
+FinProceso
+
+
+
+          </code></pre>
+        </div>
+      </main>
+
+      <main class="maintaller">
+        <!-- Segunda linea de cuadros -->
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              5. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+            Proceso talle "1.5"
+Definir namepet, agepet, kindpet, Fullname Como Caracter;
+Escribir "What is name of your pet? ";
+Leer namepet;
+Escribir "How old are your pet? ";
+Leer agepet;
+Escribir "what type o specie is your pet? ";
+Leer kindpet;
+Escribir "What is your fullname? ";
+Leer Fullname;
+Escribir namepet, " es un(a) ", kindpet, " el cual, tiene ", agepet, " años de edad y ", fullname, " es actualmente su dueño(a).";
+
+FinProceso
+          
+            
+
+
+        </code></pre>
+        </div>
+      </main>
+      <div class="iconflecha">
+        <a href="index.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a href="pseinttaller2.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV</title>
+  <link rel="stylesheet" href="Newart.css" />
+  <script src="temas.js"></script>
+  <script src="select.js"></script>
+</head>
+
+<body id="color" class="" onload="refresh()">
+  <header id="top">
+    <section id="banner">
+      <img id="mifoto" src="Foto CV.jpg" alt="chamitos" height="250px" />
+    </section>
+    <section id="nombre">
+      <h1>CV Brayan Alejandro Martinez Santos</h1>
+    </section>
+  </header>
+
+  <nav id="navega">
+    <ul class="largo">
+      <li><a href="Experiencialaboral.html">Experiencia laboral</a></li>
+      <li><a href="Referenciaspersonales.html">Referencias personales</a></li>
+      <li><a href="Referenciasfamiliares.html">Referencias familiares</a></li>
+      <li><a href="Estudiosrealizados.html">Estudios realizados</a></li>
+      <li>
+        <a href="CV Alejandro Martinez.docx" download="CV BAMS">Donwload CV</a>
+      </li>
+      <li>
+        <a>
+          <select
+            title="temas"
+            id="theme-select"
+            class="theme"
+            onchange="theme()"
+          >
+            <option value="colornaranja" id="eleccion1">Naranja</option>
+            <option value="colorverde" id="eleccion2">Verde</option>
+            <option value="colorpurpura" id="eleccion3">Purpura</option>
+          </select>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="contenido1">
+      <p id="presentacion">
+        Mi objetivo es crecer de manera individual a nivel profesional y humano
+        desempeñando de la mejor manera mis labores, aportando mi trabajo de
+        manera activa para mi beneficio en primera instancia y el comun en
+        segunda instancia. Poseo una alta capacidad de resiliencia, soy
+        autodidacta y proactivo, vivo con una necesidad de aprender algo nuevo
+        frecuentemente, ya que personalmente encuentro muy satisfactorio aplicar
+        de manera precisa lo que aprendo en la resolucion de los diferentes
+        escenarios que se me presenten.
+      </p>
+    </article>
+  </main>
+  <footer></footer>
+</body>
+
+<!DOCTYPE html>

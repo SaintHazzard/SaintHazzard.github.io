@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseint Taller 1</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="">
+    <div class="allcontent">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>Portafolio <span>Alejandro Martinez</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>
+              <a
+                class="active"
+                href="https://github.com/SaintHazzard/SofkaU/tree/taller1"
+                >RepositorioGithub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="cuadrovideo">
+        <iframe width="950" height="650" src="https://www.youtube.com/embed/v4kwuah841k" title="taller4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              1. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso sin_titulo
+	Definir vector, i Como Entero;
+	Dimension vector[5];
+	
+	Para i<-0 Hasta 4 Hacer
+		leer vector[i];
+	FinPara
+	
+	Para i<-0 Hasta 4 Hacer
+		Escribir "[",i,"]=",vector[i];
+	FinPara
+FinProceso
+          </code></pre>
+        </div>
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              2. Realizar un programa el cual solicite su nombre, apellidos,
+              edad y estatura.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  "Proceso sin_titulo
+	Definir i, k, matriz Como entero;
+	Dimension matriz[4,5];
+	i<-0;
+	k<-0;
+	Mientras i<4 Hacer
+		Mientras k<5 Hacer
+			matriz(i,k)<-azar(100)+1;
+			k<-k+1;
+			
+		FinMientras
+		k<-0;
+		i<-i+1;
+	FinMientras
+	
+	
+	
+	
+	Escribir " ";
+	Escribir sin saltar "Numeros pares:";
+	Para i<-0 hasta 3 Con Paso 1 Hacer
+		para k<-0 hasta 4 Con Paso 1 Hacer
+			Si matriz(i,k) mod 2 = 0 Entonces
+				Escribir  Sin Saltar matriz(i,k), " ";
+			FinSi
+			
+			
+			
+			
+		FinPara
+	
+		
+	FinPara
+	Escribir "";
+	Escribir Sin Saltar "Numeros impares:";
+	Para i<-0 hasta 3 Con Paso 1 Hacer
+		para k<-0 hasta 4 Con Paso 1 Hacer
+			Si matriz(i,k) mod 2 = 1 Entonces
+				Escribir  Sin Saltar matriz(i,k), " ";
+			FinSi
+			
+			
+			
+			
+			
+		FinPara
+		
+		
+	FinPara
+	Escribir "";
+	
+	
+FinProceso
+"
+          </code></pre>
+        </div>
+      </main>
+      <main class="maintaller">
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              3. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code class="">
+            Proceso sin_titulo
+	definir i, k, primo Como Real;
+	primo<-0;
+	
+	Para i<-1 hasta 1000 Hacer
+		Para k<-1 hasta i Hacer
+			Si i mod k = 0 Entonces
+				primo<-primo+1;
+			FinSi
+			
+		FinPara
+		Si primo = 2 Entonces
+			Escribir Sin Saltar i, " 	 ";
+		FinSi
+		primo<-0;
+	FinPara
+	Escribir "";
+	
+	
+	
+FinProceso
+
+
+SubProceso primos1a1000
+	
+	
+FinSubProceso
+        </code></pre>
+        </div>
+
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              4. Realizar un programa el cual solicite el nombre de una ciudad
+              capital y el país. Al finalizar debe imprimir en pantalla el
+              siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital
+              del país [Nombre del País]</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+  Proceso sin_titulo
+	Definir  c, i, k Como Real;
+	Definir matriz Como Caracter;
+	Dimension matriz[4,5];
+	c<-4;
+	matriz[0,0]<-"01";
+	matriz[0,1]<-"02";
+	matriz[0,2]<-"03";
+	matriz[0,3]<-"04";
+	matriz[0,4]<-"05";
+	matriz[1,0]<-"06";
+	matriz[1,1]<-"07";
+	matriz[1,2]<-"08";
+	matriz[1,3]<-"09";
+	matriz[1,4]<-"10";
+	matriz[2,0]<-"11";
+	matriz[2,1]<-"12";
+	matriz[2,2]<-"13";
+	matriz[2,3]<-"14";
+	matriz[2,4]<-"15";
+	matriz[3,0]<-"16";
+	matriz[3,1]<-"17";
+	matriz[3,2]<-"18";
+	matriz[3,3]<-"19";
+	matriz[3,4]<-"20";
+	
+	Para i<-0 Hasta 3 Hacer
+		Para k<-0 hasta 4 Hacer
+			Escribir Sin Saltar matriz[i,k], "  ";
+		FinPara
+		Escribir "";
+	FinPara
+	Escribir "";
+	
+	Para i<-0 Hasta 3 Hacer
+		Para k<-0 hasta 4 Hacer
+			Si i=1 o i=3 Entonces
+				Mientras c>=0 Hacer
+					Escribir Sin Saltar matriz[i,c], "  ";
+					c<-c-1;
+				FinMientras
+			SiNo
+				Escribir Sin Saltar matriz[i,k], "  ";
+				
+			FinSi
+		FinPara
+		c<-4;
+		Escribir "";
+	FinPara
+	
+	
+	
+	
+FinProceso
+          </code></pre>
+        </div>
+      </main>
+
+      <main class="maintaller">
+        <!-- Segunda linea de cuadros -->
+        <div class="info_content">
+          <p class="pcontenido">
+            <b>
+              5. Realizar un programa el cual solicite su nombre y apellidos.</b
+            >
+          </p>
+          <pre class="panel panel-none"><code>
+            Proceso sin_titulo
+	Definir matriz, i, k, a, cont, matriz2, matriz3, fila, columna, indice, v Como Entero;
+	definir filas Como Caracter;
+	Dimension matriz(10,10);
+	Dimension matriz2(10,10);
+	Dimension matriz3(10,10);
+	Dimension filas(5);
+	filas[0]<-"F";
+	filas[1]<-"I";
+	filas[2]<-"L";
+	filas[3]<-"A";
+	filas[4]<-"S";
+	a<-0;
+	cont<-0;
+	v<-0;
+	
+	para i<-0 Hasta 9 Con Paso 1 Hacer
+		para k<-0 Hasta 9 Con Paso 1 Hacer
+			matriz(i,k)<-k+1;
+			
+			
+			
+			
+			
+		FinPara
+		
+		
+		
+		
+	FinPara
+	
+
+	para i<-0 Hasta 9 Con Paso 1 Hacer
+		para k<-0 Hasta 9 Con Paso 1 Hacer
+			matriz2(i,k)<-a+1;
+			
+			
+			
+		FinPara
+		a<-a+1;
+		
+		
+		
+	FinPara
+	Escribir "   	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|";;
+	Escribir "   |                                                                      COLUMNA                                                                                          |  ";
+	Escribir "   	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|";
+	Escribir Sin Saltar "   |       ";
+	para indice <-0 hasta 9 Con Paso 1 Hacer
+		
+			Escribir Sin Saltar "|", "",     "   ", indice,"           ";
+			
+		
+		
+		
+		
+		FinPara
+		Escribir Sin Saltar "|";
+		Escribir "";
+		Escribir "   	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|";
+	
+	para i<-0 Hasta 2	 Con Paso 1 Hacer
+		para k<-0 Hasta 9 Con Paso 1 Hacer
+			
+			
+			Si matriz2(i,k)>=0 y matriz2(i,k)<4 y matriz(i,k)=1 Entonces
+				
+				
+				Escribir Sin Saltar  "   |   ",i,"    | ",  matriz(i,k),"x", matriz2(i,k), "";
+			SiNo
+				Escribir Sin Saltar "   |       | ", matriz(i,k),"x", matriz2(i,k); 
+				
+				
+			FinSi
+			
+			
+			
+		FinPara
+		Escribir "";
+		Escribir "   	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|";
+		
+	FinPara
+	para i<-3 Hasta 7	 Con Paso 1 Hacer
+		para k<-0 Hasta 9 Con Paso 1 Hacer
+			
+			
+			Si matriz2(i,k)>3 y matriz2(i,k)<=8  y matriz(i,k)<=1 Entonces
+				
+				
+				Escribir Sin Saltar filas(v), " 	 |   ",i,"   |  ",  matriz(i,k),"x", matriz2(i,k), "";
+				v<-v+1;
+			SiNo
+				Escribir Sin Saltar "   |       | ", matriz(i,k),"x", matriz2(i,k); 
+				
+				
+			FinSi
+			
+			
+			
+			
+			
+		FinPara
+		Escribir "";
+		Escribir "   	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|";
+		
+	FinPara
+	para i<-8 Hasta 9	 Con Paso 1 Hacer
+		para k<-0 Hasta 9 Con Paso 1 Hacer
+			
+			
+			Si matriz2(i,k)>7 y matriz2(i,k)<=10  y matriz(i,k)<=1 Entonces
+				
+				
+				Escribir Sin Saltar " 	  |   ",i,"   |  ",  matriz(i,k),"x", matriz2(i,k), "";
+			SiNo
+				Si matriz2(i,k)=9 Entonces
+					Escribir Sin Saltar "   |       | ", matriz(i,k),"x", matriz2(i,k);
+				sino
+					Escribir Sin Saltar "   |      | ", matriz(i,k),"x", matriz2(i,k); 
+				FinSi
+				
+				
+				
+			FinSi
+			
+			
+			
+		FinPara
+		Escribir "";
+		Escribir "   	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|";
+		
+	FinPara
+	
+	
+	
+	
+	para i<-0 Hasta 9 Con Paso 1 Hacer
+		para k<-0 Hasta 9 Con Paso 1 Hacer
+			
+			matriz3(i,k)<-matriz(i,k)*matriz2(i,k);
+			
+			
+			
+			
+			
+		FinPara
+		
+		
+		
+		
+	FinPara
+	Escribir "";
+	Escribir "Indique fila";
+	leer fila;
+	Escribir "Indique columna";
+	leer columna;
+	Escribir matriz3(fila,columna);
+FinProceso
+        </code></pre>
+        </div>
+      </main>
+      <div class="iconflecha">
+        <a href="index.html"
+          ><i
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+        <a href="pseinttaller2.html"
+          ><i
+            id="derecha"
+            class="fas fa-chevron-left"
+            style="font-size: 48px; color: #0a8049"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <script src="acordeonejercicios.js"></script>
+  </body>
+</html>
