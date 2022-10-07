@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactenos</title>
+  </head>
+  <body>
+    <section class="base">
+      <form id="contactenos" action="#" method="GET">
+        <fieldset>
+          <legend>Contactenos</legend>
+
+          <ul>
+            <li>
+              <input
+                id="nombre"
+                class="inpt"
+                type="text"
+                placeholder="Nombre"
+                required
+              />
+            </li>
+            <li>
+              <input
+                id="email"
+                class="inpt"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </li>
+            <li>
+              <input
+                id="asunto"
+                class="inpt"
+                type="text"
+                placeholder="Asunto"
+                required
+              />
+            </li>
+
+            <div class="mensaje">
+              <textarea
+                class="inpt"
+                name="mensaje"
+                id="msj"
+                cols="40"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button type="reset">Limpiar</button>
+            <button
+              type="submit"
+              value="Submit"
+              id="setdata"
+              onclick="getData()"
+            >
+              Enviar
+            </button>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+    <script src="contact.js"></script>
+  </body>
+</html>

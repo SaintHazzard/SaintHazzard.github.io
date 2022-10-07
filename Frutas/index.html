@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutas</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Frutas ordenadas</h1>
+      <select
+        title="temas"
+        name="selector-frutas"
+        id="select-fruit"
+        class="selector"
+        onchange="tema()"
+      >
+        <option value="green">Tema 1</option>
+        <option value="blue">Tema 2</option>
+        <option value="default" selected>default</option>
+      </select>
+    </header>
+    <div class="main">
+      <ol class="main__ol">
+        <li id="1" class="frutas">Aguacate</li>
+        <li id="2" class="frutas">Arandano</li>
+        <li id="3" class="frutas">Babano</li>
+        <li id="4" class="frutas">Cereza</li>
+        <li id="5" class="frutas">Ciruela</li>
+        <li id="6" class="frutas">Coco</li>
+        <li id="7" class="frutas">Durazno</li>
+        <li id="8" class="frutas">Kiwi</li>
+        <li id="9" class="frutas">Limon</li>
+        <li id="10" class="frutas">Mango</li>
+      </ol>
+    </div>
+    <script src="frutas.js"></script>
+  </body>
+</html>

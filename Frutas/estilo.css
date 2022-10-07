@@ -1,0 +1,40 @@
+body {
+  background-color: antiquewhite;
+}
+header {
+  height: 100px;
+  width: 350px;
+  margin: auto;
+}
+.main {
+  width: 200px;
+  margin: auto;
+}
+h1 {
+  display: inline-block;
+}
+
+.selector {
+  text-align: center;
+}
+
+.main__ol {
+}
+
+.frutas {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.frutas-verde {
+  background: greenyellow;
+}
+
+.frutas-blue {
+  background-color: blue;
+}
+
+.frutas-rojo {
+  background: #bb4312;
+  border-radius: 5px;
+}
